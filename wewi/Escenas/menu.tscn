@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://skxc26omjg3s"]
 
 [ext_resource type="Script" uid="uid://dh2mduqx5rkxs" path="res://Codigo/Menu.gd" id="1_kim34"]
-[ext_resource type="Texture2D" uid="uid://c2kyc8qaodsix" path="res://Rocky Roads/Backgrounds/desert_b.png" id="2_v8bcg"]
-[ext_resource type="Texture2D" uid="uid://kpw567r8wnie" path="res://Rocky Roads/Backgrounds/clouds.png" id="3_1bgts"]
-[ext_resource type="Texture2D" uid="uid://blv0p76cvfs4c" path="res://Rocky Roads/Backgrounds/mountains_a.png" id="4_x0hy4"]
-[ext_resource type="Texture2D" uid="uid://d02e5bvq5m38v" path="res://Rocky Roads/Backgrounds/mountains_b.png" id="5_06xcy"]
+[ext_resource type="Texture2D" uid="uid://c2kyc8qaodsix" path="res://Carpeta de Varias cosas/Fondos/desert_b.png" id="2_v8bcg"]
+[ext_resource type="Texture2D" uid="uid://kpw567r8wnie" path="res://Carpeta de Varias cosas/Fondos/clouds.png" id="3_1bgts"]
+[ext_resource type="Texture2D" uid="uid://blv0p76cvfs4c" path="res://Carpeta de Varias cosas/Fondos/mountains_a.png" id="4_x0hy4"]
+[ext_resource type="Texture2D" uid="uid://d02e5bvq5m38v" path="res://Carpeta de Varias cosas/Fondos/mountains_b.png" id="5_06xcy"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

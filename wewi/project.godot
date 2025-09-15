@@ -16,8 +16,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Musica="*res://Escenas/musica.tscn"
-Gameaudio="*res://Escenas/gameaudio.tscn"
+Musica="*res://Escenas/Carpeta De Progreso/musica.tscn"
+Gameaudio="*res://Escenas/Carpeta De Progreso/gameaudio.tscn"
 
 [layer_names]
 

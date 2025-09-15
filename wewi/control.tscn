@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ngf6v8rschse"]
 
-[ext_resource type="PackedScene" uid="uid://cs3yvdpo0olmw" path="res://Escenas/selector_niveles.tscn" id="1_0fbet"]
+[ext_resource type="PackedScene" uid="uid://cs3yvdpo0olmw" path="res://Escenas/Carpeta De Progreso/selector_niveles.tscn" id="1_0fbet"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
