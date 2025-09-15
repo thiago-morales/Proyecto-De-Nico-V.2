@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwav5sm8c6rsr"]
+
+[ext_resource type="Script" uid="uid://6xc1m7ga5alh" path="res://Escenas/gameaudio.gd" id="1_djsfb"]
+[ext_resource type="AudioStream" uid="uid://bf6oat66m4ldp" path="res://musica/135936__bradwesson__collectcoin.wav" id="2_jt425"]
+
+[node name="GameAudio" type="Node"]
+script = ExtResource("1_djsfb")
+
+[node name="Moneda" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_jt425")

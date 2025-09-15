@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b16o80tr22u2d"]
+
+[ext_resource type="AudioStream" uid="uid://jqi4jhd02474" path="res://musica/Plants vs Zombies Soundtrack. [Mini Games]-yt.savetube.me.mp3" id="1_101dd"]
+
+[node name="musica" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_101dd")
+autoplay = true

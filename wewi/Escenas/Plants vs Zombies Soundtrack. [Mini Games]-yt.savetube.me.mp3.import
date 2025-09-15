@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dscg43w7d44rc"
+path="res://.godot/imported/Plants vs Zombies Soundtrack. [Mini Games]-yt.savetube.me.mp3-b3ca26b15a1aa99297cc82c8cb0d6c07.mp3str"
+
+[deps]
+
+source_file="res://Escenas/Plants vs Zombies Soundtrack. [Mini Games]-yt.savetube.me.mp3"
+dest_files=["res://.godot/imported/Plants vs Zombies Soundtrack. [Mini Games]-yt.savetube.me.mp3-b3ca26b15a1aa99297cc82c8cb0d6c07.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

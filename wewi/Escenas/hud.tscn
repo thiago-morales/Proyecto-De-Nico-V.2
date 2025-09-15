@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://caxprlno1v3jj"]
+
+[ext_resource type="Texture2D" uid="uid://bjifnw7rc67pl" path="res://Rocky Roads/Objects/coin_gold.png" id="1_37p78"]
+[ext_resource type="Script" uid="uid://dbjewyy7tlhox" path="res://Codigo/hud.gd" id="1_64ctp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64ctp"]
+atlas = ExtResource("1_37p78")
+region = Rect2(0, 0, 16, 16)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_64ctp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("AtlasTexture_64ctp")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 11.0
+offset_right = 77.0
+offset_bottom = 34.0
+text = "X"
+
+[node name="Contador" type="Label" parent="."]
+offset_left = 50.0
+offset_top = 10.0
+offset_right = 90.0
+offset_bottom = 33.0
+text = "0"

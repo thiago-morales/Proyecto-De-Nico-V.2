@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bte5w24cpmlwy"]
+
+[ext_resource type="Texture2D" uid="uid://cdrd3o526sik2" path="res://Rocky Roads/Objects/ladder.png" id="1_hgmvb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7tip4"]
+size = Vector2(48, 8)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.56427
+texture = ExtResource("1_hgmvb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 4)
+shape = SubResource("RectangleShape2D_7tip4")
+one_way_collision = true

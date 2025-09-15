@@ -1,0 +1,179 @@
+[gd_scene load_steps=18 format=4 uid="uid://br6wy4lqgco1w"]
+
+[ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/game_manager.gd" id="1_umgrw"]
+[ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/hud.tscn" id="2_4c00g"]
+[ext_resource type="Texture2D" uid="uid://qntiqstrj5fp" path="res://Rocky Roads/Tilesets/tileset_water.png" id="3_s7vnm"]
+[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Escenas/Player.tscn" id="4_f3jj2"]
+[ext_resource type="PackedScene" uid="uid://cmyb7h2whlupr" path="res://Escenas/moneda.tscn" id="5_v8u0u"]
+[ext_resource type="PackedScene" uid="uid://e563y5gtd6j7" path="res://Escenas/enemigo.tscn" id="6_4c00g"]
+[ext_resource type="PackedScene" uid="uid://cpu0ajm40cpkq" path="res://Escenas/zona_caida.tscn" id="6_brqnh"]
+[ext_resource type="Texture2D" uid="uid://boksoae11xbqd" path="res://Super Mountain Dusk Files/Assets/version A/Layers/sky.png" id="7_gtkp5"]
+[ext_resource type="Texture2D" uid="uid://dq2vhetbjh1y7" path="res://Super Mountain Dusk Files/Assets/version A/Layers/far-clouds.png" id="8_phklj"]
+[ext_resource type="Texture2D" uid="uid://btgnkg4tx1w17" path="res://Super Mountain Dusk Files/Assets/version A/Layers/near-clouds.png" id="9_his5a"]
+[ext_resource type="Texture2D" uid="uid://sd4lnfe684kj" path="res://Super Mountain Dusk Files/Assets/version A/Layers/far-mountains.png" id="10_b6p1y"]
+[ext_resource type="Texture2D" uid="uid://qmoidsk5a0j0" path="res://Super Mountain Dusk Files/Assets/version A/Layers/mountains.png" id="11_yxfgc"]
+[ext_resource type="Texture2D" uid="uid://e4le7rfjhr18" path="res://Super Mountain Dusk Files/Assets/version A/Layers/trees.png" id="12_vy6ff"]
+[ext_resource type="PackedScene" uid="uid://cm4bi7tvd1tjq" path="res://Escenas/pinchos.tscn" id="13_75arh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gejyx"]
+texture = ExtResource("3_s7vnm")
+2:0/0 = 0
+3:0/0 = 0
+5:0/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5yunf"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gejyx")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jlv7k"]
+
+[node name="mundo 1" type="Node2D"]
+position = Vector2(72, -280)
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_umgrw")
+
+[node name="HUD" parent="." instance=ExtResource("2_4c00g")]
+
+[node name="TileMap" type="TileMapLayer" parent="."]
+light_mask = 4
+position = Vector2(0, 16)
+tile_map_data = PackedByteArray("AAACABkAAAADAAEAAAADABkAAAAEAAEAAAAEABkAAAADAAEAAAAFABkAAAAEAAEAAAAGABkAAAADAAEAAAAHABkAAAAEAAEAAAAIABkAAAADAAEAAAAJABkAAAAEAAEAAAAKABkAAAADAAEAAAALABkAAAAEAAEAAAAMABkAAAADAAEAAAANABkAAAAEAAEAAAAOABkAAAADAAEAAAAPABkAAAAEAAEAAAASABsAAAAGAAMAAAASABwAAAAGAAMAAAASAB0AAAAGAAMAAAASAB4AAAAGAAMAAAABABkAAAADAAEAAAAAABkAAAACAAEAAAAAABoAAAACAAIAAAD//xoAAAABAAIAAAD//xsAAAABAAMAAAD//xwAAAABAAMAAAD//x0AAAABAAMAAAD//x4AAAABAAMAAAABABoAAAACAAMAAAACABoAAAADAAMAAAADABoAAAAEAAMAAAAEABoAAAAFAAMAAAABABsAAAACAAMAAAACABsAAAADAAMAAAADABsAAAAEAAMAAAAEABsAAAAFAAMAAAABABwAAAACAAMAAAACABwAAAADAAMAAAADABwAAAAEAAMAAAAEABwAAAAFAAMAAAABAB0AAAACAAMAAAACAB0AAAADAAMAAAADAB0AAAAEAAMAAAAEAB0AAAAFAAMAAAABAB4AAAACAAMAAAACAB4AAAADAAMAAAADAB4AAAAEAAMAAAAEAB4AAAAFAAMAAAAFABoAAAACAAMAAAAGABoAAAADAAMAAAAHABoAAAAEAAMAAAAIABoAAAAFAAMAAAAFABsAAAACAAMAAAAGABsAAAADAAMAAAAHABsAAAAEAAMAAAAIABsAAAAFAAMAAAAFABwAAAACAAMAAAAGABwAAAADAAMAAAAHABwAAAAEAAMAAAAIABwAAAAFAAMAAAAFAB0AAAACAAMAAAAGAB0AAAADAAMAAAAHAB0AAAAEAAMAAAAIAB0AAAAFAAMAAAAFAB4AAAACAAMAAAAGAB4AAAADAAMAAAAHAB4AAAAEAAMAAAAIAB4AAAAFAAMAAAAJABoAAAACAAMAAAAKABoAAAADAAMAAAALABoAAAAEAAMAAAAMABoAAAAFAAMAAAAJABsAAAACAAMAAAAKABsAAAADAAMAAAALABsAAAAEAAMAAAAMABsAAAAFAAMAAAAJABwAAAACAAMAAAAKABwAAAADAAMAAAALABwAAAAEAAMAAAAMABwAAAAFAAMAAAAJAB0AAAACAAMAAAAKAB0AAAADAAMAAAALAB0AAAAEAAMAAAAMAB0AAAAFAAMAAAAJAB4AAAACAAMAAAAKAB4AAAADAAMAAAALAB4AAAAEAAMAAAAMAB4AAAAFAAMAAAANABoAAAACAAMAAAAOABoAAAADAAMAAAAPABoAAAAEAAMAAAAQABoAAAAFAAMAAAANABsAAAACAAMAAAAOABsAAAADAAMAAAAPABsAAAAEAAMAAAAQABsAAAAFAAMAAAANABwAAAACAAMAAAAOABwAAAADAAMAAAAPABwAAAAEAAMAAAAQABwAAAAFAAMAAAANAB0AAAACAAMAAAAOAB0AAAADAAMAAAAPAB0AAAAEAAMAAAAQAB0AAAAFAAMAAAANAB4AAAACAAMAAAAOAB4AAAADAAMAAAAPAB4AAAAEAAMAAAAQAB4AAAAFAAMAAAARABsAAAAEAAMAAAARABwAAAAEAAMAAAARAB0AAAAEAAMAAAARAB4AAAAEAAMAAAAAABsAAAAEAAMAAAAAABwAAAAEAAMAAAAAAB0AAAAEAAMAAAAAAB4AAAAEAAMAAAAQABkAAAAEAAEAAAARABoAAAAFAAIAAAARABkAAAAFAAEAAAASABoAAAAGAAIAAAA=")
+tile_set = SubResource("TileSet_5yunf")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_f3jj2")]
+position = Vector2(120, 402)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, -2)
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+editor_draw_limits = true
+
+[node name="monedas" type="Node2D" parent="."]
+position = Vector2(-56, 24)
+
+[node name="Moneda" parent="monedas" instance=ExtResource("5_v8u0u")]
+position = Vector2(208, 376)
+
+[node name="Moneda2" parent="monedas" instance=ExtResource("5_v8u0u")]
+position = Vector2(80, 337)
+
+[node name="Moneda3" parent="monedas" instance=ExtResource("5_v8u0u")]
+position = Vector2(200, 336)
+
+[node name="Moneda4" parent="monedas" instance=ExtResource("5_v8u0u")]
+position = Vector2(18, 389)
+
+[node name="enemigo" parent="monedas" instance=ExtResource("6_4c00g")]
+position = Vector2(256, 384)
+
+[node name="ZonaCaida" parent="." instance=ExtResource("6_brqnh")]
+position = Vector2(136, 504)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaCaida"]
+position = Vector2(51, 10)
+shape = SubResource("WorldBoundaryShape2D_jlv7k")
+
+[node name="Pinchos3" type="Node2D" parent="."]
+
+[node name="Pinchos2" parent="Pinchos3" instance=ExtResource("13_75arh")]
+position = Vector2(64, 408)
+
+[node name="Pinchos" parent="Pinchos3" instance=ExtResource("13_75arh")]
+position = Vector2(256, 408)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 0.2)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(160, 120)
+texture = ExtResource("7_gtkp5")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(256, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(128, 120)
+scale = Vector2(2, 1)
+texture = ExtResource("8_phklj")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(144, 120)
+scale = Vector2(2, 1)
+texture = ExtResource("9_his5a")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(160, 120)
+scale = Vector2(2, 1)
+texture = ExtResource("10_b6p1y")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(320, 120)
+scale = Vector2(2, 1)
+texture = ExtResource("11_yxfgc")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(480, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
+position = Vector2(240, 120)
+scale = Vector2(2, 1)
+texture = ExtResource("12_vy6ff")

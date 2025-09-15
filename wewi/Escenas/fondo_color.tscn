@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://hi8vlpiu8jep"]
+
+[ext_resource type="Script" uid="uid://c2yjgubf557f0" path="res://Codigo/fondo_color.gd" id="1_glh07"]
+
+[node name="CanvasModulate" type="CanvasModulate"]
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_glh07")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true

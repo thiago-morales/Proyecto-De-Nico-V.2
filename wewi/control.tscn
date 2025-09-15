@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://ngf6v8rschse"]
+
+[ext_resource type="PackedScene" uid="uid://cs3yvdpo0olmw" path="res://Escenas/selector_niveles.tscn" id="1_0fbet"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 5
+
+[node name="ColorRect" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect2" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect3" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect4" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect5" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect6" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect7" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect8" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect9" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
+
+[node name="ColorRect10" parent="GridContainer" instance=ExtResource("1_0fbet")]
+layout_mode = 2
