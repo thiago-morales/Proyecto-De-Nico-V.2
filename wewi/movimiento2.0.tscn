@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b684n3tuh4xsh"]
+
+[ext_resource type="Script" uid="uid://djourm7wmdmht" path="res://Codigo/movimiento_2.0.gd" id="1_r10ye"]
+[ext_resource type="Texture2D" uid="uid://bof14drhq0wsj" path="res://512x512/Bumpy Sky/Bumpy_Sky-Sunset_04-512x512.png" id="1_t650n"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_r10ye")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+texture_repeat = 2
+position = Vector2(2590, 2550)
+motion_mirroring = Vector2(5120, 5120)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 2
+position = Vector2(9, 25)
+texture = ExtResource("1_t650n")
+region_enabled = true
+region_rect = Rect2(5200, 5100, 5200, 5150)
