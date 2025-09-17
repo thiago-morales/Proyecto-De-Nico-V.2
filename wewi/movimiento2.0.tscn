@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b684n3tuh4xsh"]
+[gd_scene load_steps=4 format=3 uid="uid://b684n3tuh4xsh"]
 
 [ext_resource type="Script" uid="uid://djourm7wmdmht" path="res://Codigo/movimiento_2.0.gd" id="1_r10ye"]
-[ext_resource type="Texture2D" uid="uid://bof14drhq0wsj" path="res://512x512/Bumpy Sky/Bumpy_Sky-Sunset_04-512x512.png" id="1_t650n"]
+[ext_resource type="Texture2D" uid="uid://ctug07b45smct" path="res://Carpeta de Varias cosas/Fondos/sombrio.jpg" id="2_r10ye"]
+[ext_resource type="PackedScene" uid="uid://c14qsyeobaf2p" path="res://shader.tscn" id="3_ep1ox"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 script = ExtResource("1_r10ye")
@@ -13,7 +14,10 @@ motion_mirroring = Vector2(5120, 5120)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
 texture_filter = 2
-position = Vector2(9, 25)
-texture = ExtResource("1_t650n")
+position = Vector2(859, -582)
+scale = Vector2(2.55333, 1.45111)
+texture = ExtResource("2_r10ye")
 region_enabled = true
-region_rect = Rect2(5200, 5100, 5200, 5150)
+region_rect = Rect2(4500, 4500, 4500, 4500)
+
+[node name="Shader_Menu_Principal" parent="ParallaxLayer/Sprite2D" instance=ExtResource("3_ep1ox")]

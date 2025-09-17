@@ -21,6 +21,10 @@ Gameaudio="*res://Escenas/Carpeta De Progreso/gameaudio.tscn"
 
 [display]
 
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/mode=3
+window/size/initial_position_type=0
 window/stretch/mode="canvas_items"
 
 [layer_names]

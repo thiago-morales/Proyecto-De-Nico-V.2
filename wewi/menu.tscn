@@ -1,13 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdv6fr4fmyysp"]
+[gd_scene load_steps=9 format=3 uid="uid://bdv6fr4fmyysp"]
 
 [ext_resource type="Script" uid="uid://dh2mduqx5rkxs" path="res://Codigo/menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://co40f31kqvvct" path="res://Carpeta de Varias cosas/Fondos/titulo-final-convertido-a-1000x321.jpeg" id="2_mae5d"]
 [ext_resource type="PackedScene" uid="uid://b684n3tuh4xsh" path="res://movimiento2.0.tscn" id="2_ouk20"]
+[ext_resource type="Script" uid="uid://djourm7wmdmht" path="res://Codigo/movimiento_2.0.gd" id="3_4hy44"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p25xy"]
-bg_color = Color(0.066998, 0.187279, 1, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lnt83"]
-bg_color = Color(0.2411, 0.709258, 0.288478, 1)
+bg_color = Color(0.564706, 0.607843, 0.627451, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mae5d"]
+bg_color = Color(0.443137, 0.443137, 0.443137, 0)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -18,35 +26,52 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lti8b")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-self_modulate = Color(0, 0, 0, 1)
+[node name="ParallaxBackground" type="Node2D" parent="." instance=ExtResource("2_ouk20")]
+script = ExtResource("3_4hy44")
+
+[node name="VBoxMenu" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = -1
+anchor_left = 0.493
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 0.493
 anchor_bottom = 0.5
-offset_left = -115.0
-offset_top = -110.0
-offset_right = 115.0
-offset_bottom = 110.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -746.8
+offset_top = -404.0
+offset_right = 746.2
+offset_bottom = 402.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 1
+
+[node name="VBoxBotones" type="VBoxContainer" parent="VBoxMenu"]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
 theme_override_constants/separation = 80
 
-[node name="Inicio" type="Button" parent="VBoxContainer"]
+[node name="logo" type="TextureRect" parent="VBoxMenu/VBoxBotones"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_mae5d")
+stretch_mode = 3
+
+[node name="Inicio" type="Button" parent="VBoxMenu/VBoxBotones"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.48453, 0.475293, 0.477604, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/hover = SubResource("StyleBoxFlat_p25xy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4hy44")
 theme_override_styles/normal = SubResource("StyleBoxFlat_lnt83")
 text = "Inicio"
 
-[node name="Salida" type="Button" parent="VBoxContainer"]
+[node name="Salida" type="Button" parent="VBoxMenu/VBoxBotones"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
 text = "Salida"
 
-[node name="ParallaxBackground" parent="." instance=ExtResource("2_ouk20")]
-
-[connection signal="pressed" from="VBoxContainer/Inicio" to="." method="_on_inicio_pressed"]
-[connection signal="pressed" from="VBoxContainer/Salida" to="." method="_on_salida_pressed"]
+[connection signal="pressed" from="VBoxMenu/VBoxBotones/Inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="VBoxMenu/VBoxBotones/Salida" to="." method="_on_salida_pressed"]
