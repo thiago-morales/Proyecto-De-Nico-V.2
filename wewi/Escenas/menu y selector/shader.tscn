@@ -1,16 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://c14qsyeobaf2p"]
 
-[ext_resource type="Shader" uid="uid://dambm3mxaq8mm" path="res://Escenas/menu y selector/tv.gdshader" id="1_qwwtv"]
+[ext_resource type="Shader" uid="uid://dj7hyjludbr25" path="res://Escenas/menu y selector/tv.gdshader" id="1_qwwtv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yvb20"]
 shader = ExtResource("1_qwwtv")
 
 [node name="Shader_Menu_Principal" type="Node2D"]
+visible = false
 position = Vector2(685, 119)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+visible = false
 material = SubResource("ShaderMaterial_yvb20")
 anchors_preset = 15
 anchor_right = 1.0
