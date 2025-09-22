@@ -74,6 +74,7 @@ unique_name_in_owner = true
 script = ExtResource("1_umgrw")
 
 [node name="HUD" parent="." instance=ExtResource("2_4c00g")]
+visible = false
 
 [node name="TileMap" type="TileMapLayer" parent="."]
 light_mask = 4
@@ -104,6 +105,9 @@ position = Vector2(200, 336)
 
 [node name="Moneda4" parent="monedas" instance=ExtResource("5_v8u0u")]
 position = Vector2(18, 389)
+
+[node name="Moneda5" parent="monedas" instance=ExtResource("5_v8u0u")]
+position = Vector2(160, 376)
 
 [node name="enemigo" parent="monedas" instance=ExtResource("6_4c00g")]
 position = Vector2(256, 384)
