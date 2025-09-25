@@ -1,6 +1,63 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3to3vhnxklpn"]
+[gd_scene load_steps=9 format=3 uid="uid://b3to3vhnxklpn"]
 
 [ext_resource type="Script" uid="uid://c0f57ewx7iqao" path="res://selector_de_niveles.gd" id="1_6n5l5"]
+[ext_resource type="PackedScene" uid="uid://b684n3tuh4xsh" path="res://Escenas/menu y selector/movimiento2.0.tscn" id="2_e4jn7"]
+[ext_resource type="FontFile" uid="uid://e8316r6wpeo8" path="res://CreakingCrypt-Regular.otf" id="3_3nmtt"]
+[ext_resource type="FontFile" uid="uid://cxkfboxvo2ngv" path="res://Warm Winter.ttf" id="3_wg53f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4jn7"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+anti_aliasing_size = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vh0x"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+anti_aliasing_size = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3nmtt"]
+bg_color = Color(0.191767, 0.195046, 0.19645, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+anti_aliasing_size = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wg53f"]
+bg_color = Color(0, 0, 0, 0.541176)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(1, 1, 1, 0.439216)
+shadow_size = 1
+anti_aliasing_size = 0.01
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,6 +68,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6n5l5")
 
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_e4jn7")]
+
 [node name="niveles" type="VBoxContainer" parent="."]
 texture_filter = 2
 clip_contents = true
@@ -19,73 +78,127 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 284.0
-offset_top = -139.0
-offset_right = -541.0
-offset_bottom = 128.0
+offset_left = 42.0
+offset_top = 22.0
+offset_right = -730.0
+offset_bottom = 107.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.4226, 1.38881)
+scale = Vector2(1.83167, 1.87941)
 theme_override_constants/separation = 50
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="niveles"]
-custom_minimum_size = Vector2(1, 0)
 layout_direction = 2
 layout_mode = 2
-theme_override_constants/separation = 100
+theme_override_constants/separation = 75
 alignment = 1
 
 [node name="Nivel 1" type="Button" parent="niveles/HBoxContainer"]
-clip_contents = true
-custom_minimum_size = Vector2(75, -1000)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_3nmtt")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e4jn7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vh0x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3nmtt")
 text = "1"
+icon_alignment = 1
 
 [node name="Nivel 2" type="Button" parent="niveles/HBoxContainer"]
-clip_contents = true
-custom_minimum_size = Vector2(75, -1000)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_3nmtt")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e4jn7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vh0x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3nmtt")
 disabled = true
-text = "2	"
+text = "🔒"
+icon_alignment = 1
 
 [node name="Nivel 3" type="Button" parent="niveles/HBoxContainer"]
-clip_contents = true
-custom_minimum_size = Vector2(75, -1000)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_3nmtt")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e4jn7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vh0x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3nmtt")
 disabled = true
-text = "3"
+text = "🔒"
+icon_alignment = 1
 
 [node name="Nivel 4" type="Button" parent="niveles/HBoxContainer"]
-clip_contents = true
-custom_minimum_size = Vector2(75, -1000)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_3nmtt")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e4jn7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vh0x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3nmtt")
 disabled = true
-text = "4
-"
+text = "🔒"
+icon_alignment = 1
 
 [node name="Nivel 5" type="Button" parent="niveles/HBoxContainer"]
-clip_contents = true
-custom_minimum_size = Vector2(75, -1000)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_3nmtt")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e4jn7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vh0x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3nmtt")
 disabled = true
-text = "5"
+text = "🔒"
+icon_alignment = 1
 
-[node name="Back" type="Button" parent="."]
+[node name="Button" type="Button" parent="."]
 clip_contents = true
-custom_minimum_size = Vector2(75, -1000)
+custom_minimum_size = Vector2(85, 95)
 layout_mode = 2
-offset_left = 56.0
-offset_top = 64.0
-offset_right = 131.0
-offset_bottom = 141.0
+offset_left = 150.0
+offset_top = 50.0
+offset_right = 235.0
+offset_bottom = 145.0
 theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_wg53f")
 text = "<"
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -680.0
+offset_top = 187.0
+offset_right = 556.0
+offset_bottom = 366.0
+grow_horizontal = 2
+scale = Vector2(1.1, 1.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 16384
+theme_override_constants/shadow_offset_y = 16384
+theme_override_constants/outline_size = 50
+theme_override_fonts/font = ExtResource("3_wg53f")
+theme_override_font_sizes/font_size = 120
+text = "Selecciona El Nivel Que Desee!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="niveles/HBoxContainer/Nivel 1" to="." method="_on_nivel_1_pressed"]
-[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="niveles/HBoxContainer/Nivel 2" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="niveles/HBoxContainer/Nivel 3" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="niveles/HBoxContainer/Nivel 4" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="niveles/HBoxContainer/Nivel 5" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_back_pressed"]

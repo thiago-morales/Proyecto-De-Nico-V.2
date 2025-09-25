@@ -1,0 +1,89 @@
+[gd_scene load_steps=5 format=3 uid="uid://b03v00uepilul"]
+
+[ext_resource type="Script" uid="uid://jfrp4lsfkcok" path="res://imagenes.gd" id="1_rcrb7"]
+[ext_resource type="Texture2D" uid="uid://xxp0nj0dj2qx" path="res://icon.svg" id="2_umn1d"]
+
+[sub_resource type="Gradient" id="Gradient_d8x0e"]
+interpolation_mode = 2
+interpolation_color_space = 2
+offsets = PackedFloat32Array(0.394531, 0.675781, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rcrb7"]
+gradient = SubResource("Gradient_d8x0e")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 0.5)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_rcrb7")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(319, 185.5)
+scale = Vector2(4.07813, 2.33594)
+texture = ExtResource("2_umn1d")
+
+[node name="PointLight2D5" type="PointLight2D" parent="Icon"]
+position = Vector2(2.69733, 3.63879)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(962.5, 177.25)
+scale = Vector2(4.99219, 2.47266)
+texture = ExtResource("2_umn1d")
+
+[node name="PointLight2D4" type="PointLight2D" parent="Icon2"]
+position = Vector2(-0.901428, -2.52764)
+scale = Vector2(0.816901, 0.944708)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(378, 477)
+scale = Vector2(4.99219, 2.47266)
+texture = ExtResource("2_umn1d")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Icon3"]
+position = Vector2(1.80282, -2.42654)
+scale = Vector2(0.816901, 0.944708)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(983, 451)
+scale = Vector2(4.99219, 2.47266)
+texture = ExtResource("2_umn1d")
+
+[node name="PointLight2D" type="PointLight2D" parent="Icon4"]
+position = Vector2(0.200302, 1.21327)
+scale = Vector2(0.816901, 0.944708)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon5" type="Sprite2D" parent="."]
+position = Vector2(364, 739)
+scale = Vector2(4.99219, 2.47266)
+texture = ExtResource("2_umn1d")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Icon5"]
+position = Vector2(1.80282, 3.23539)
+scale = Vector2(0.816901, 0.944708)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon6" type="Sprite2D" parent="."]
+position = Vector2(1151, 770)
+scale = Vector2(4.99219, 2.47266)
+texture = ExtResource("2_umn1d")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Icon6"]
+position = Vector2(-5.40845, -3.23541)
+scale = Vector2(0.816901, 0.944708)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0, 0, 0, 1)
