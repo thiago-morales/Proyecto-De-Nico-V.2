@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://d1b72q6j34prr"]
 
 [ext_resource type="Texture2D" uid="uid://q4agss4y8yck" path="res://Escenas/Obstaculos/hacha.png" id="1_0gqoq"]
-[ext_resource type="Script" uid="uid://b8e7d5b4aucmt" path="res://Codigo/hacha.gd" id="1_wnptv"]
+[ext_resource type="Script" uid="uid://b8e7d5b4aucmt" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/hacha.gd" id="1_wnptv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wnptv"]
 radius = 120.0

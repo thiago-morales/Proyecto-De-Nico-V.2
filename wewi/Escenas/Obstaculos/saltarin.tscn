@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ce286uatdh0mw"]
 
-[ext_resource type="Texture2D" uid="uid://guuttiqffgc2" path="res://Dinos Colores/Muelle.png" id="1_xetx6"]
+[ext_resource type="Texture2D" uid="uid://guuttiqffgc2" path="res://Carpeta de Varias cosas/Dinos Colores/Muelle.png" id="1_xetx6"]
 [ext_resource type="Script" uid="uid://bsy52upbepwtx" path="res://Escenas/Obstaculos/saltarin.gd" id="2_ww08a"]
 [ext_resource type="AudioStream" uid="uid://1a0f5lptr52u" path="res://musica/muelle.wav" id="3_xkkan"]
 

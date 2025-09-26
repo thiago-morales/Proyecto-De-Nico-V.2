@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b03v00uepilul"]
+[gd_scene load_steps=6 format=3 uid="uid://b03v00uepilul"]
 
-[ext_resource type="Script" uid="uid://jfrp4lsfkcok" path="res://imagenes.gd" id="1_rcrb7"]
+[ext_resource type="Script" uid="uid://jfrp4lsfkcok" path="res://Codigo/Menus y mundos scrips/imagenes.gd" id="1_rcrb7"]
 [ext_resource type="Texture2D" uid="uid://xxp0nj0dj2qx" path="res://icon.svg" id="2_umn1d"]
+[ext_resource type="Texture2D" uid="uid://bom0rngklh5n" path="res://Carpeta de imagenes Para Cinematicas/1.png" id="2_wni05"]
 
 [sub_resource type="Gradient" id="Gradient_d8x0e"]
 interpolation_mode = 2
@@ -21,12 +22,13 @@ fill_to = Vector2(0, 0.5)
 script = ExtResource("1_rcrb7")
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(319, 185.5)
-scale = Vector2(4.07813, 2.33594)
-texture = ExtResource("2_umn1d")
+position = Vector2(-2221.56, -860.126)
+scale = Vector2(1.53756, 1.02891)
+texture = ExtResource("2_wni05")
 
 [node name="PointLight2D5" type="PointLight2D" parent="Icon"]
-position = Vector2(2.69733, 3.63879)
+position = Vector2(-99.1407, -66.4529)
+scale = Vector2(14.4303, 11.6757)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpu0ajm40cpkq"]
 
-[ext_resource type="Script" uid="uid://da2tcgc8vv7bl" path="res://Codigo/Caida.gd" id="1_46yk1"]
+[ext_resource type="Script" uid="uid://da2tcgc8vv7bl" path="res://Codigo/Menus y mundos scrips/Caida.gd" id="1_46yk1"]
 
 [node name="ZonaCaida" type="Area2D"]
 collision_mask = 2

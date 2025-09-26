@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://cmyb7h2whlupr"]
 
 [ext_resource type="Texture2D" uid="uid://bjifnw7rc67pl" path="res://Carpeta de Varias cosas/Objetos/coin_gold.png" id="1_nghqc"]
-[ext_resource type="Script" uid="uid://qbndldk28iby" path="res://Codigo/moneda.gd" id="1_r4iok"]
+[ext_resource type="Script" uid="uid://qbndldk28iby" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/moneda.gd" id="1_r4iok"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r4iok"]
 atlas = ExtResource("1_nghqc")

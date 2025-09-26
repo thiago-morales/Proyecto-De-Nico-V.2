@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bjw280vuem7xc"]
 
-[ext_resource type="Script" uid="uid://bimixjlyn2adf" path="res://Codigo/sierra.gd" id="1_4la8x"]
+[ext_resource type="Script" uid="uid://bimixjlyn2adf" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/sierra.gd" id="1_4la8x"]
 [ext_resource type="Texture2D" uid="uid://0ws04qa2vovo" path="res://Carpeta de Varias cosas/Enemigos/saw.png" id="1_fatpt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4la8x"]

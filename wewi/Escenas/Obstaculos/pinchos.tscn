@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cm4bi7tvd1tjq"]
 
-[ext_resource type="Script" uid="uid://dygwx3dblv5n" path="res://Codigo/pinchos.gd" id="1_gex0h"]
+[ext_resource type="Script" uid="uid://dygwx3dblv5n" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/pinchos.gd" id="1_gex0h"]
 [ext_resource type="Texture2D" uid="uid://hbg0mqpe45bi" path="res://Carpeta de Varias cosas/Enemigos/spikes.png" id="1_h62kx"]
 
 [node name="Pinchos" type="Area2D"]

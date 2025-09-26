@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c3hfsd5ou4ys0"]
 
-[ext_resource type="Script" uid="uid://b5ubridp586hr" path="res://progreso.gd" id="1_v6auo"]
+[ext_resource type="Script" uid="uid://b5ubridp586hr" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/progreso.gd" id="1_v6auo"]
 
 [node name="Progreso" type="CanvasLayer"]
 script = ExtResource("1_v6auo")

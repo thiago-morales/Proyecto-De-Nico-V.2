@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://b3wdo4v16vqdn"]
 
-[ext_resource type="Script" uid="uid://b1b03pwcn0lw3" path="res://Codigo/Player.gd" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://bmyacbphb05ck" path="res://Dinos Colores/DinoSprites - mort.png" id="2_kne1u"]
+[ext_resource type="Script" uid="uid://b1b03pwcn0lw3" path="res://Codigo/JUGADOR Y OBSTACULOS/PLAYER SCRIPT/Player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://bmyacbphb05ck" path="res://Carpeta de Varias cosas/Dinos Colores/DinoSprites - mort.png" id="2_kne1u"]
 [ext_resource type="AudioStream" uid="uid://2k1bfki506jw" path="res://musica/391670__jeckkech__jump.wav" id="3_c1rio"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e80uo"]
