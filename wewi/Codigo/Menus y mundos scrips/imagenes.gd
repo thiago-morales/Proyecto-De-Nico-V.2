@@ -23,7 +23,7 @@ func _ready():
 	# Inicializamos todas las luces apagadas
 	for l in lights:
 		l.visible = true      # visibles para el Tween
-		l.scale = Vector2(0.1,0.1)
+		l.texture_scale = 1.4   # 👈 AUMENTO el área de la luz (cambiá este valor a gusto)
 		l.energy = 0
 
 func _process(delta):
@@ -33,17 +33,13 @@ func _process(delta):
 			var anim_type = animation_types[current_index]
 			
 			if anim_type == "normal":
-				# Animación simple: escala + energía
+				# Animación simple: energía
 				var tween = create_tween()
-				tween.tween_property(light, "scale", Vector2(1,1), 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 				tween.tween_property(light, "energy", 1.0, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 				
 			elif anim_type == "pulse":
 				# Animación pulso inicial
 				var tween = create_tween()
-				tween.tween_property(light, "scale", Vector2(1.2,1.2), 0.3).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-				tween.tween_property(light, "scale", Vector2(1,1), 0.3).set_delay(0.3)
-				
 				tween.tween_property(light, "energy", 1.2, 0.3).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 				tween.tween_property(light, "energy", 1.0, 0.3).set_delay(0.3)
 				

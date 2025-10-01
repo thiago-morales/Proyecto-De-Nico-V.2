@@ -14,7 +14,7 @@ colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1)
 gradient = SubResource("Gradient_d8x0e")
 width = 128
 height = 128
-fill = 1
+fill = 2
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0, 0.5)
 
@@ -22,19 +22,20 @@ fill_to = Vector2(0, 0.5)
 script = ExtResource("1_rcrb7")
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(-2221.56, -860.126)
-scale = Vector2(1.53756, 1.02891)
+light_mask = 8193
+position = Vector2(343.97, 183.687)
+scale = Vector2(0.28503, 0.215392)
 texture = ExtResource("2_wni05")
 
 [node name="PointLight2D5" type="PointLight2D" parent="Icon"]
-position = Vector2(-99.1407, -66.4529)
-scale = Vector2(14.4303, 11.6757)
+position = Vector2(3.44752, -20.5522)
+scale = Vector2(11.2502, 8.58391)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(962.5, 177.25)
-scale = Vector2(4.99219, 2.47266)
+position = Vector2(1109.25, 195.875)
+scale = Vector2(5.28516, 2.76758)
 texture = ExtResource("2_umn1d")
 
 [node name="PointLight2D4" type="PointLight2D" parent="Icon2"]
@@ -44,7 +45,7 @@ texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon3" type="Sprite2D" parent="."]
-position = Vector2(378, 477)
+position = Vector2(352, 541)
 scale = Vector2(4.99219, 2.47266)
 texture = ExtResource("2_umn1d")
 
@@ -55,7 +56,7 @@ texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon4" type="Sprite2D" parent="."]
-position = Vector2(983, 451)
+position = Vector2(1118, 550)
 scale = Vector2(4.99219, 2.47266)
 texture = ExtResource("2_umn1d")
 
@@ -66,7 +67,7 @@ texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon5" type="Sprite2D" parent="."]
-position = Vector2(364, 739)
+position = Vector2(367, 194)
 scale = Vector2(4.99219, 2.47266)
 texture = ExtResource("2_umn1d")
 
