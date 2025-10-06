@@ -45,16 +45,15 @@ func _process(delta):
 			var sprite = sprites[current_index]
 			var anim_type = animation_types[current_index]
 
+			# Primer clic: enfocar y encender luz
 			if not zoomed_in:
-				# 1️⃣ Mover cámara hacia el sprite
 				var tween_move = create_tween()
 				tween_move.tween_property(camera, "position", sprite.global_position, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
-				
-				# 2️⃣ Zoom hacia adentro
+
 				var tween_zoom = create_tween()
 				tween_zoom.tween_property(camera, "zoom", Vector2(1.5, 1.5), 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 
-				# 3️⃣ Animación de la luz
+				# Encender luz
 				if anim_type == "normal":
 					var tween_light = create_tween()
 					tween_light.tween_property(light, "energy", 1.0, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
@@ -64,13 +63,31 @@ func _process(delta):
 					tween_light.tween_property(light, "energy", 1.0, 0.3).set_delay(0.3)
 
 				zoomed_in = true
-			else:
-				# Volver a la posición original y zoom normal
-				var tween_back = create_tween()
-				tween_back.tween_property(camera, "position", original_position   , 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
-				tween_back.tween_property(camera, "zoom", Vector2(0.5, 0.6), 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 
-				zoomed_in = false
+			# Segundo clic: apagar luz actual y pasar a la siguiente
+			else:
+				var tween_light_off = create_tween()
+				tween_light_off.tween_property(light, "energy", 0.0, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+
 				current_index += 1
-		else:
-			get_tree().change_scene_to_file("res://Nivel2.tscn")
+
+				if current_index < lights.size():
+					var next_light = lights[current_index]
+					var next_sprite = sprites[current_index]
+					var next_anim = animation_types[current_index]
+
+					# Mover cámara al siguiente sprite
+					var tween_move_next = create_tween()
+					tween_move_next.tween_property(camera, "position", next_sprite.global_position, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+
+					# Encender siguiente luz
+					if next_anim == "normal":
+						var tween_light_on = create_tween()
+						tween_light_on.tween_property(next_light, "energy", 1.0, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+					elif next_anim == "pulse":
+						var tween_light_on = create_tween()
+						tween_light_on.tween_property(next_light, "energy", 1.2, 0.3).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+						tween_light_on.tween_property(next_light, "energy", 1.0, 0.3).set_delay(0.3)
+				else:
+					# Si ya no hay más imágenes, pasar de escena
+					get_tree().change_scene_to_file("res://Nivel2.tscn")
