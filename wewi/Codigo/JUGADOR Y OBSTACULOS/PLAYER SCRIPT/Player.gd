@@ -14,9 +14,7 @@ var salto_buffering : bool = false
 var coyote_tiempo = 1.0
 var coyote_tiempo_acabado = 0.0
 
-#esto es el buffer o como se escriba xd
-var salto_buffer_tiempo = 1.0
-var salto_buffer_tiempo_acabado = 0.0
+
 
 
 
@@ -41,15 +39,8 @@ func _physics_process(delta: float) -> void:
 		$salto.play()
 		coyote_tiempo_acabado = 0
 		
-	if Input.is_action_just_pressed("ui_accept"):
-		salto_buffer_tiempo_acabado = salto_buffer_tiempo
-	else:
-		salto_buffer_tiempo_acabado -= delta
+
 		
-	if salto_buffer_tiempo_acabado > 0 and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-		$salto.play()
-		salto_buffer_tiempo_acabado = 0
 		
 		
 # Saltar si hay buffer y estás en el suelo

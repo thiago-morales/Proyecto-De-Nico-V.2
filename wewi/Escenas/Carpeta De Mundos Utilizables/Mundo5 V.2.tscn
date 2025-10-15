@@ -570,7 +570,7 @@ fill_to = Vector2(0, 0.5)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jlv7k"]
 distance = -1.0
 
-[node name="mundo12" type="Node2D"]
+[node name="Mundo 5 V_2" type="Node2D"]
 position = Vector2(72, -281)
 
 [node name="GameManager" type="Node" parent="."]
