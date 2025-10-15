@@ -652,42 +652,41 @@ position = Vector2(426, 421)
 [node name="Moneda5" parent="monedas" instance=ExtResource("14_8y0b6")]
 position = Vector2(181, 393)
 
-[node name="Moneda" parent="monedas" instance=ExtResource("14_8y0b6")]
-position = Vector2(385, 462)
-
-[node name="PointLight2D2" type="PointLight2D" parent="monedas/Moneda"]
-position = Vector2(-203, -69)
+[node name="PointLight2D2" type="PointLight2D" parent="monedas/Moneda5"]
+position = Vector2(1, 0)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
+
+[node name="Moneda" parent="monedas" instance=ExtResource("14_8y0b6")]
+position = Vector2(385, 462)
 
 [node name="PointLight2D3" type="PointLight2D" parent="monedas/Moneda"]
 position = Vector2(1, 0)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
 
-[node name="PointLight2D4" type="PointLight2D" parent="monedas/Moneda"]
-position = Vector2(135, 30)
-scale = Vector2(0.703125, 0.664063)
-texture = SubResource("GradientTexture2D_dh8cn")
-
-[node name="PointLight2D5" type="PointLight2D" parent="monedas/Moneda"]
-position = Vector2(170, 224)
-scale = Vector2(0.703125, 0.664063)
-texture = SubResource("GradientTexture2D_dh8cn")
-
-[node name="PointLight2D6" type="PointLight2D" parent="monedas/Moneda"]
-position = Vector2(562, 53)
-scale = Vector2(0.703125, 0.664063)
-texture = SubResource("GradientTexture2D_dh8cn")
-
 [node name="Moneda2" parent="monedas" instance=ExtResource("14_8y0b6")]
 position = Vector2(520, 492)
+
+[node name="PointLight2D4" type="PointLight2D" parent="monedas/Moneda2"]
+scale = Vector2(0.703125, 0.664063)
+texture = SubResource("GradientTexture2D_dh8cn")
 
 [node name="Moneda3" parent="monedas" instance=ExtResource("14_8y0b6")]
 position = Vector2(556, 685)
 
+[node name="PointLight2D5" type="PointLight2D" parent="monedas/Moneda3"]
+position = Vector2(-1, 1)
+scale = Vector2(0.703125, 0.664063)
+texture = SubResource("GradientTexture2D_dh8cn")
+
 [node name="Moneda4" parent="monedas" instance=ExtResource("14_8y0b6")]
 position = Vector2(949, 514)
+
+[node name="PointLight2D6" type="PointLight2D" parent="monedas/Moneda4"]
+position = Vector2(-2, 1)
+scale = Vector2(0.703125, 0.664063)
+texture = SubResource("GradientTexture2D_dh8cn")
 
 [node name="Pinchos" type="Node2D" parent="."]
 

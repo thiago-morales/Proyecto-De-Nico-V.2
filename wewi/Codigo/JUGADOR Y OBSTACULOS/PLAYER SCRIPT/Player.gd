@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 	
 const SPEED = 200.0
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -385.0
 @onready var salto: AudioStreamPlayer2D = $salto
 @onready var ray_cast_2d: RayCast2D = $RayCast2D
 var salto_buffering : bool = false
