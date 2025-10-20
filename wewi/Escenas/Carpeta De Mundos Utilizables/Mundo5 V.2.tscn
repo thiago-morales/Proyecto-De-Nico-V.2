@@ -662,7 +662,7 @@ position = Vector2(717, 655)
 position = Vector2(144, 298)
 
 [node name="Moneda3" parent="monedas" instance=ExtResource("14_l0smu")]
-position = Vector2(372, 544)
+position = Vector2(423, 742)
 
 [node name="Moneda4" parent="monedas" instance=ExtResource("14_l0smu")]
 position = Vector2(936, 733)
