@@ -594,7 +594,13 @@ _data = {
 }
 
 [node name="Mundo 3 V_3" type="Node2D"]
-position = Vector2(72, -280)
+position = Vector2(68, -268)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-69, 268)
+scale = Vector2(0.866686, 3.39037)
+anchor_mode = 0
+zoom = Vector2(1, 1.13)
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -630,11 +636,6 @@ position = Vector2(104, 696)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaCaida"]
 position = Vector2(275, 178)
 shape = SubResource("WorldBoundaryShape2D_jlv7k")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-72, 280)
-anchor_mode = 0
-zoom = Vector2(1, 1.13)
 
 [node name="sierra" type="Node2D" parent="."]
 
