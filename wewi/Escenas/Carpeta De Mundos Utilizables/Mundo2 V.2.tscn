@@ -679,7 +679,7 @@ zoom = Vector2(1, 1.13)
 position = Vector2(952, 600)
 
 [node name="Area2D2" parent="sierra" instance=ExtResource("14_4bigc")]
-position = Vector2(1032, 600)
+position = Vector2(1016, 600)
 
 [node name="Area2D3" parent="sierra" instance=ExtResource("14_4bigc")]
 position = Vector2(872, 680)
@@ -705,7 +705,7 @@ position = Vector2(488, 720)
 position = Vector2(864, 728)
 
 [node name="Moneda4" parent="modenas" instance=ExtResource("15_xwslk")]
-position = Vector2(984, 552)
+position = Vector2(1000, 552)
 
 [node name="plataforma" type="Node2D" parent="."]
 position = Vector2(2, 0)
