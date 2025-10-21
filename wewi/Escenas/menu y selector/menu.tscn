@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=4 uid="uid://bdv6fr4fmyysp"]
+[gd_scene load_steps=14 format=4 uid="uid://bdv6fr4fmyysp"]
 
 [ext_resource type="Script" uid="uid://dh2mduqx5rkxs" path="res://Codigo/Menus y mundos scrips/menu.gd" id="1_lti8b"]
 [ext_resource type="PackedScene" uid="uid://b684n3tuh4xsh" path="res://Escenas/menu y selector/movimiento2.0.tscn" id="2_ouk20"]
 [ext_resource type="Texture2D" uid="uid://cqsqb5yqo0j0q" path="res://Carpeta de Varias cosas/Fondos/titulo defi.png" id="3_dagav"]
+[ext_resource type="PackedScene" uid="uid://c14qsyeobaf2p" path="res://Escenas/menu y selector/shader.tscn" id="4_hok4a"]
 
 [sub_resource type="Shader" id="Shader_mae5d"]
 code = "// Based on: https://www.shadertoy.com/view/Ms23DR
@@ -219,11 +220,14 @@ grow_vertical = 2
 script = ExtResource("1_lti8b")
 
 [node name="logo" type="TextureRect" parent="."]
-layout_mode = 2
-offset_left = 360.0
-offset_top = 115.0
-offset_right = 1241.0
-offset_bottom = 398.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -440.5
+offset_right = 440.5
+offset_bottom = 283.0
+grow_horizontal = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("3_dagav")
@@ -254,6 +258,7 @@ theme_override_constants/separation = 80
 
 [node name="Inicio" type="Button" parent="VBoxMenu/VBoxBotones"]
 layout_mode = 2
+size_flags_vertical = 8
 theme_override_colors/font_hover_color = Color(0.48453, 0.475293, 0.477604, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontFile_hok4a")
@@ -271,6 +276,10 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/hover = SubResource("StyleBoxFlat_ytr4m")
 theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
 text = "Salida"
+
+[node name="Shader_Menu_Principal" parent="." instance=ExtResource("4_hok4a")]
+visible = false
+position = Vector2(847, 651)
 
 [connection signal="pressed" from="VBoxMenu/VBoxBotones/Inicio" to="." method="_on_inicio_pressed"]
 [connection signal="pressed" from="VBoxMenu/VBoxBotones/Salida" to="." method="_on_salida_pressed"]
