@@ -1,13 +1,14 @@
 extends CharacterBody2D
 
 const SPEED = 200.0
-const JUMP_VELOCITY = -385.0
+const JUMP_VELOCITY = -300.0
+
 @onready var salto: AudioStreamPlayer2D = $salto
 @onready var ray_cast_2d: RayCast2D = $RayCast2D
-var salto_buffering : bool = false
-@onready var durcion_buffering:float = 0.15
+var salto_buffering: bool = false
+@onready var durcion_buffering: float = 0.15
 
-var coyote_tiempo = 1.0
+var coyote_tiempo = 0.5
 var coyote_tiempo_acabado = 0.0
 
 var prev_platform_pos: Vector2 = Vector2.ZERO
@@ -44,7 +45,7 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("Idle")
 
 	# --- Plataforma animada ---
-	var floor_collision := null
+	var floor_collision: KinematicCollision2D = null
 	if get_slide_collision_count() > 0:
 		floor_collision = get_slide_collision(0)
 
@@ -60,7 +61,6 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	position += platform_velocity * delta  # Mueve al personaje junto a la plataforma
-
 
 func saltarin_salto(cantidad_impulso):
 	velocity.y = -cantidad_impulso

@@ -713,5 +713,4 @@ position = Vector2(670, 653)
 position = Vector2(40, 400)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0, 0, 0, 1)
