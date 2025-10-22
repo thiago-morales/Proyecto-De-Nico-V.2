@@ -1,8 +1,17 @@
-[gd_scene load_steps=16 format=3 uid="uid://b3wdo4v16vqdn"]
+[gd_scene load_steps=25 format=3 uid="uid://b3wdo4v16vqdn"]
 
 [ext_resource type="Script" uid="uid://b1b03pwcn0lw3" path="res://Codigo/JUGADOR Y OBSTACULOS/PLAYER SCRIPT/Player.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://bmyacbphb05ck" path="res://Carpeta de Varias cosas/Dinos Colores/DinoSprites - mort.png" id="2_kne1u"]
+[ext_resource type="Texture2D" uid="uid://dgeb8u5jwc113" path="res://Explosions/Circle_explosion/Circle_explosion1.png" id="2_p34a7"]
 [ext_resource type="AudioStream" uid="uid://2k1bfki506jw" path="res://musica/391670__jeckkech__jump.wav" id="3_c1rio"]
+[ext_resource type="Texture2D" uid="uid://nwbgxu8wciak" path="res://Explosions/Circle_explosion/Circle_explosion2.png" id="3_jfkjd"]
+[ext_resource type="Texture2D" uid="uid://chmoyg0725d6k" path="res://Explosions/Circle_explosion/Circle_explosion3.png" id="4_pif0w"]
+[ext_resource type="Texture2D" uid="uid://bh14eknbq3wr8" path="res://Explosions/Circle_explosion/Circle_explosion4.png" id="5_phnxo"]
+[ext_resource type="Texture2D" uid="uid://cea56em0x32xk" path="res://Explosions/Circle_explosion/Circle_explosion6.png" id="6_n314l"]
+[ext_resource type="Texture2D" uid="uid://c0x3obee0jhnr" path="res://Explosions/Circle_explosion/Circle_explosion7.png" id="7_1ibla"]
+[ext_resource type="Texture2D" uid="uid://ca41vhpopi8ot" path="res://Explosions/Circle_explosion/Circle_explosion8.png" id="8_gk3ro"]
+[ext_resource type="Texture2D" uid="uid://brpp3kpybfep5" path="res://Explosions/Circle_explosion/Circle_explosion9.png" id="9_ksnnx"]
+[ext_resource type="Texture2D" uid="uid://dguj5fp64cpt0" path="res://Explosions/Circle_explosion/Circle_explosion10.png" id="10_2pjw4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e80uo"]
 size = Vector2(10, 19)
@@ -49,6 +58,41 @@ region = Rect2(456, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r3kul"]
 animations = [{
+"frames": [{
+"duration": 1.7,
+"texture": ExtResource("2_p34a7")
+}, {
+"duration": 1.7,
+"texture": ExtResource("3_jfkjd")
+}, {
+"duration": 1.7,
+"texture": ExtResource("4_pif0w")
+}, {
+"duration": 1.7,
+"texture": ExtResource("5_phnxo")
+}, {
+"duration": 1.7,
+"texture": ExtResource("6_n314l")
+}, {
+"duration": 1.7,
+"texture": ExtResource("6_n314l")
+}, {
+"duration": 1.7,
+"texture": ExtResource("7_1ibla")
+}, {
+"duration": 1.7,
+"texture": ExtResource("8_gk3ro")
+}, {
+"duration": 1.7,
+"texture": ExtResource("9_ksnnx")
+}, {
+"duration": 1.7,
+"texture": ExtResource("10_2pjw4")
+}],
+"loop": true,
+"name": &"Death",
+"speed": 15.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cxr5p")
@@ -100,8 +144,8 @@ shape = SubResource("RectangleShape2D_e80uo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r3kul")
-animation = &"Run"
-frame_progress = 0.524626
+animation = &"Death"
+frame_progress = 0.730428
 
 [node name="salto" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_c1rio")

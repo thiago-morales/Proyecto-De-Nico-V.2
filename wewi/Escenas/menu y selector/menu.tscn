@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://qx5w2b0m16o3"]
+[gd_scene load_steps=13 format=4 uid="uid://bdv6fr4fmyysp"]
 
 [ext_resource type="Script" uid="uid://dh2mduqx5rkxs" path="res://Codigo/Menus y mundos scrips/menu.gd" id="1_lti8b"]
 [ext_resource type="PackedScene" uid="uid://b684n3tuh4xsh" path="res://Escenas/menu y selector/movimiento2.0.tscn" id="2_ouk20"]
@@ -220,10 +220,10 @@ script = ExtResource("1_lti8b")
 
 [node name="logo" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 136.0
-offset_top = 24.0
-offset_right = 1017.0
-offset_bottom = 307.0
+offset_left = 135.0
+offset_top = 25.0
+offset_right = 1016.0
+offset_bottom = 308.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("3_dagav")
@@ -238,13 +238,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -113.0
-offset_top = -2.0
-offset_right = 37.0
-offset_bottom = 200.0
+offset_left = -96.0
+offset_top = 20.0
+offset_right = 54.0
+offset_bottom = 222.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.03231, 0.892001)
 alignment = 1
 
 [node name="VBoxBotones" type="VBoxContainer" parent="VBoxMenu"]

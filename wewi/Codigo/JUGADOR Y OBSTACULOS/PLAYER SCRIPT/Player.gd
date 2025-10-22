@@ -5,6 +5,8 @@ const JUMP_VELOCITY = -300.0
 
 @onready var salto: AudioStreamPlayer2D = $salto
 @onready var ray_cast_2d: RayCast2D = $RayCast2D
+@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+
 var salto_buffering: bool = false
 @onready var durcion_buffering: float = 0.15
 
@@ -14,7 +16,22 @@ var coyote_tiempo_acabado = 0.0
 var prev_platform_pos: Vector2 = Vector2.ZERO
 var platform_velocity: Vector2 = Vector2.ZERO
 
+var is_dead: bool = false
+
+# --- Respawn ---
+var respawn_enabled: bool = false
+var respawn_position: Vector2 = Vector2.ZERO
+var respawn_delay: float = 1.0
+
+func _ready() -> void:
+	respawn_position = global_position
+
+
 func _physics_process(delta: float) -> void:
+	if is_dead:
+		return
+
+	# --- Física normal ---
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
@@ -31,18 +48,18 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 
 	if direction > 0:
-		$AnimatedSprite2D.scale.x = 1
+		anim.scale.x = 1
 	elif direction < 0:
-		$AnimatedSprite2D.scale.x = -1
+		anim.scale.x = -1
 
 	if direction:
 		velocity.x = direction * SPEED
 		if is_on_floor():
-			$AnimatedSprite2D.play("Run")
+			anim.play("Run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		if is_on_floor():
-			$AnimatedSprite2D.play("Idle")
+			anim.play("Idle")
 
 	# --- Plataforma animada ---
 	var floor_collision: KinematicCollision2D = null
@@ -51,19 +68,4 @@ func _physics_process(delta: float) -> void:
 
 	if is_on_floor() and floor_collision and floor_collision.get_collider() is AnimatableBody2D:
 		var floor = floor_collision.get_collider()
-		var current_pos = floor.global_position
-		if prev_platform_pos != Vector2.ZERO:
-			platform_velocity = (current_pos - prev_platform_pos) / delta
-		prev_platform_pos = current_pos
-	else:
-		platform_velocity = Vector2.ZERO
-		prev_platform_pos = Vector2.ZERO
-
-	move_and_slide()
-	position += platform_velocity * delta  # Mueve al personaje junto a la plataforma
-
-func saltarin_salto(cantidad_impulso):
-	velocity.y = -cantidad_impulso
-
-func coyote():
-	return ray_cast_2d.is_colliding()
+		var current_pos = floor.global_po
