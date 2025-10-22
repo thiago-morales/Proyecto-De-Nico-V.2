@@ -44,8 +44,14 @@ func _physics_process(delta: float) -> void:
 		if is_on_floor():
 			$AnimatedSprite2D.play("Idle")
 
+
 	# --- Plataforma animada ---
+<<<<<<< HEAD
 	var floor_collision: KinematicCollision2D = null
+=======
+#que carajo hicieron? xd
+	var floor_collision := null
+>>>>>>> 74b96957d79cea87767ef1be0c0953382bd06a32
 	if get_slide_collision_count() > 0:
 		floor_collision = get_slide_collision(0)
 

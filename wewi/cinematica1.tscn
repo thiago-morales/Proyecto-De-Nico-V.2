@@ -1,0 +1,105 @@
+[gd_scene load_steps=11 format=3 uid="uid://d0w5uxcvqfqdt"]
+
+[ext_resource type="Script" uid="uid://damewvsfcygg2" path="res://cinematica_1.gd" id="1_2obhc"]
+[ext_resource type="Texture2D" uid="uid://dsrbepvp82tlw" path="res://Carpeta de Varias cosas/Fondos/fondo negro.png" id="2_ve4cg"]
+[ext_resource type="Texture2D" uid="uid://cutktxrdxp4ar" path="res://imagenesjaldin/Captura de pantalla 2025-10-14 151326.png" id="3_ve4cg"]
+[ext_resource type="Texture2D" uid="uid://co8ottfsht5mn" path="res://imagenesjaldin/Captura de pantalla 2025-10-14 151343.png" id="4_v3xii"]
+[ext_resource type="Texture2D" uid="uid://gc8gn1rx5ore" path="res://imagenesjaldin/Captura de pantalla 2025-10-14 151356.png" id="5_tjkao"]
+[ext_resource type="Texture2D" uid="uid://cpdglurbf3x58" path="res://imagenesjaldin/Captura de pantalla 2025-10-14 151407.png" id="6_2jl1e"]
+[ext_resource type="Texture2D" uid="uid://dhe08itl2mwg8" path="res://imagenesjaldin/Captura de pantalla 2025-10-14 151422.png" id="7_gjc4m"]
+[ext_resource type="Texture2D" uid="uid://jimdokeb41o3" path="res://imagenesjaldin/Captura de pantalla 2025-10-14 151457.png" id="8_woxap"]
+
+[sub_resource type="Gradient" id="Gradient_d8x0e"]
+interpolation_mode = 2
+interpolation_color_space = 2
+offsets = PackedFloat32Array(0.394531, 0.675781, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rcrb7"]
+gradient = SubResource("Gradient_d8x0e")
+width = 128
+height = 128
+fill = 2
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 0.5)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_2obhc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(800, 474)
+scale = Vector2(5.58936, 2.11077)
+texture = ExtResource("2_ve4cg")
+
+[node name="Icon" type="Sprite2D" parent="."]
+light_mask = 8193
+position = Vector2(269.5, 196)
+scale = Vector2(0.2705, 0.245)
+texture = ExtResource("3_ve4cg")
+
+[node name="PointLight2D5" type="PointLight2D" parent="Icon"]
+position = Vector2(-31.4234, -28.5714)
+scale = Vector2(12.9746, 10.7928)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(803, 196)
+scale = Vector2(0.25277, 0.245)
+texture = ExtResource("4_v3xii")
+
+[node name="PointLight2D4" type="PointLight2D" parent="Icon2"]
+position = Vector2(-5.93452, -46.9387)
+scale = Vector2(12.6245, 10.572)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(1333, 196)
+scale = Vector2(0.266297, 0.245)
+texture = ExtResource("5_tjkao")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Icon3"]
+position = Vector2(43.1866, -14.2857)
+scale = Vector2(13.0214, 10.9645)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(270.5, 705.5)
+scale = Vector2(0.2695, 0.258125)
+texture = ExtResource("6_2jl1e")
+
+[node name="PointLight2D" type="PointLight2D" parent="Icon4"]
+position = Vector2(7.42122, -127.681)
+scale = Vector2(12.5098, 8.65624)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon5" type="Sprite2D" parent="."]
+position = Vector2(803, 670)
+scale = Vector2(0.253, 0.22375)
+texture = ExtResource("7_gjc4m")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Icon5"]
+position = Vector2(9.88136, 17.9551)
+scale = Vector2(12.423, 9.39958)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="Icon6" type="Sprite2D" parent="."]
+position = Vector2(1334.27, 699.5)
+scale = Vector2(0.267272, 0.250625)
+texture = ExtResource("8_woxap")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Icon6"]
+position = Vector2(6.46553, -77.8053)
+scale = Vector2(12.5916, 8.82409)
+texture = SubResource("GradientTexture2D_rcrb7")
+texture_scale = 1.3
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(801, 450)

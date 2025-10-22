@@ -13,7 +13,6 @@ position = Vector2(685, 119)
 visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-visible = false
 material = SubResource("ShaderMaterial_yvb20")
 anchors_preset = 15
 anchor_right = 1.0
