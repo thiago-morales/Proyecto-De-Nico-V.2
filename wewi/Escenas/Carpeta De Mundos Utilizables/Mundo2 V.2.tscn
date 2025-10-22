@@ -702,7 +702,7 @@ position = Vector2(448, 384)
 position = Vector2(488, 720)
 
 [node name="Moneda3" parent="modenas" instance=ExtResource("15_xwslk")]
-position = Vector2(864, 728)
+position = Vector2(762, 637)
 
 [node name="Moneda4" parent="modenas" instance=ExtResource("15_xwslk")]
 position = Vector2(1000, 552)

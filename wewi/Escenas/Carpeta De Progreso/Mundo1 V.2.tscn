@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://dbhoebmfdttjs"]
+[gd_scene load_steps=29 format=4 uid="uid://dpmi2ed3h1o2a"]
 
 [ext_resource type="Texture2D" uid="uid://cga0w20x2gnpw" path="res://Carpeta de Varias cosas/Fondos/ChatGPT Image 13 oct 2025, 10_47_16.png" id="1_aycbh"]
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_km67l"]

@@ -8,7 +8,7 @@ const JUMP_VELOCITY = -300.0
 var salto_buffering: bool = false
 @onready var durcion_buffering: float = 0.15
 
-var coyote_tiempo = 0.5
+var coyote_tiempo = 1.0
 var coyote_tiempo_acabado = 0.0
 
 var prev_platform_pos: Vector2 = Vector2.ZERO
@@ -44,14 +44,8 @@ func _physics_process(delta: float) -> void:
 		if is_on_floor():
 			$AnimatedSprite2D.play("Idle")
 
-
 	# --- Plataforma animada ---
-<<<<<<< HEAD
 	var floor_collision: KinematicCollision2D = null
-=======
-#que carajo hicieron? xd
-	var floor_collision := null
->>>>>>> 74b96957d79cea87767ef1be0c0953382bd06a32
 	if get_slide_collision_count() > 0:
 		floor_collision = get_slide_collision(0)
 
