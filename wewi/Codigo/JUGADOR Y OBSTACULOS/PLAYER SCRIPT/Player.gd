@@ -4,31 +4,25 @@ const SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 
 @onready var salto: AudioStreamPlayer2D = $salto
-@onready var ray_cast_2d: RayCast2D = $RayCast2D
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
-
-var salto_buffering: bool = false
-@onready var durcion_buffering: float = 0.15
 
 var coyote_tiempo = 1.0
 var coyote_tiempo_acabado = 0.0
 
-var prev_platform_pos: Vector2 = Vector2.ZERO
-var platform_velocity: Vector2 = Vector2.ZERO
-
 var is_dead: bool = false
 
 # --- Respawn ---
-var respawn_enabled: bool = false
+var respawn_enabled: bool = true
 var respawn_position: Vector2 = Vector2.ZERO
 var respawn_delay: float = 1.0
+
 
 func _ready() -> void:
 	respawn_position = global_position
 
-
 func _physics_process(delta: float) -> void:
 	if is_dead:
+		velocity = Vector2.ZERO
 		return
 
 	# --- Física normal ---
@@ -52,7 +46,7 @@ func _physics_process(delta: float) -> void:
 	elif direction < 0:
 		anim.scale.x = -1
 
-	if direction:
+	if direction != 0:
 		velocity.x = direction * SPEED
 		if is_on_floor():
 			anim.play("Run")
@@ -61,11 +55,8 @@ func _physics_process(delta: float) -> void:
 		if is_on_floor():
 			anim.play("Idle")
 
-	# --- Plataforma animada ---
-	var floor_collision: KinematicCollision2D = null
-	if get_slide_collision_count() > 0:
-		floor_collision = get_slide_collision(0)
+	move_and_slide();
 
-	if is_on_floor() and floor_collision and floor_collision.get_collider() is AnimatableBody2D:
-		var floor = floor_collision.get_collider()
-		var current_pos = floor.global_po
+func dead():
+	set_physics_process(false)
+	$AnimatedSprite2D.play("Death")

@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://bmyacbphb05ck" path="res://Carpeta de Varias cosas/Dinos Colores/DinoSprites - mort.png" id="2_kne1u"]
 [ext_resource type="AudioStream" uid="uid://2k1bfki506jw" path="res://musica/391670__jeckkech__jump.wav" id="3_c1rio"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e80uo"]
+size = Vector2(10, 19)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_c2cej"]
 atlas = ExtResource("2_dlhls")
 region = Rect2(336, 0, 24, 24)
@@ -17,6 +20,10 @@ region = Rect2(360, 0, 24, 24)
 atlas = ExtResource("2_dlhls")
 region = Rect2(384, 0, 24, 24)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxr5p"]
+atlas = ExtResource("2_kne1u")
+region = Rect2(0, 0, 24, 24)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdg3f"]
 atlas = ExtResource("2_kne1u")
 region = Rect2(24, 0, 24, 24)
@@ -28,10 +35,6 @@ region = Rect2(72, 0, 24, 24)
 [sub_resource type="AtlasTexture" id="AtlasTexture_dtqjt"]
 atlas = ExtResource("2_kne1u")
 region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cxr5p"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(0, 0, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wi0c6"]
 atlas = ExtResource("2_kne1u")
@@ -75,6 +78,9 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_cxr5p")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_tdg3f")
 }, {
 "duration": 1.0,
@@ -82,9 +88,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dtqjt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cxr5p")
 }],
 "loop": true,
 "name": &"Idle",
@@ -114,21 +117,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_e80uo"]
-size = Vector2(10, 19)
-
 [node name="Jugador" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_kpjcp")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_r3kul")
-animation = &"Idle"
-speed_scale = 0.2
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -0.5)
 shape = SubResource("RectangleShape2D_e80uo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r3kul")
+animation = &"Death"
+frame = 2
+frame_progress = 1.0
+speed_scale = 0.2
 
 [node name="salto" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_c1rio")
