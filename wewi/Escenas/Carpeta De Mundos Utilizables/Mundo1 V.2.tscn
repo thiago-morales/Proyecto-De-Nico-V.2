@@ -563,7 +563,6 @@ position = Vector2(687, 371)
 texture = ExtResource("1_aycbh")
 
 [node name="Shader_Menu_Principal" parent="." instance=ExtResource("1_yqtdh")]
-visible = true
 position = Vector2(618, 402)
 
 [node name="GameManager" type="Node" parent="."]

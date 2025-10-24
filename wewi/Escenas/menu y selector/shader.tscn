@@ -6,11 +6,9 @@
 shader = ExtResource("1_qwwtv")
 
 [node name="Shader_Menu_Principal" type="Node2D"]
-visible = false
 position = Vector2(685, 119)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 material = SubResource("ShaderMaterial_yvb20")
