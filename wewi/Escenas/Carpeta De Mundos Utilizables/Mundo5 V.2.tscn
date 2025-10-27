@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cccwaca5c6xp8" path="res://Carpeta de Varias cosas/Decoracion/tree.png" id="8_rvgh4"]
 [ext_resource type="Texture2D" uid="uid://dq2hlnr6hejso" path="res://Carpeta de Varias cosas/Decoracion/tree_b.png" id="9_au4ya"]
 [ext_resource type="Texture2D" uid="uid://b7ygndrr0tt5j" path="res://Carpeta de Varias cosas/Pisos/tileset_forest.png" id="10_mknvp"]
-[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Escenas/Carpeta De Progreso/Player.tscn" id="11_38jej"]
+[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Codigo/JUGADOR Y OBSTACULOS/PLAYER SCRIPT/Player.tscn" id="11_38jej"]
 [ext_resource type="PackedScene" uid="uid://cpu0ajm40cpkq" path="res://Escenas/Obstaculos/zona_caida.tscn" id="12_8a5ag"]
 [ext_resource type="PackedScene" uid="uid://bjw280vuem7xc" path="res://Escenas/Obstaculos/sierra.tscn" id="13_xuuu2"]
 [ext_resource type="PackedScene" uid="uid://cmyb7h2whlupr" path="res://Escenas/Carpeta De Progreso/moneda.tscn" id="14_l0smu"]

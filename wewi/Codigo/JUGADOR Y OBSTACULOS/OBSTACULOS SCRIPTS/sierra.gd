@@ -1,4 +1,5 @@
 extends Area2D
+@onready var jugador: CharacterBody2D = $"../../CharacterBody2D"
 
 
 
@@ -6,5 +7,8 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	print("perro")
+	if jugador and jugador.has_method("morir"):
+		jugador.morir()
 
-	get_tree().reload_current_scene()
+	await get_tree().create_timer(1.5).timeout
+	get_tree().reload_current_scene()  # espera que termine la animación

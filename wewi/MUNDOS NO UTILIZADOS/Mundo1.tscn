@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_umgrw"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="2_4c00g"]
 [ext_resource type="Texture2D" uid="uid://qntiqstrj5fp" path="res://Carpeta de Varias cosas/Pisos/tileset_water.png" id="3_s7vnm"]
-[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Escenas/Carpeta De Progreso/Player.tscn" id="4_f3jj2"]
+[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Codigo/JUGADOR Y OBSTACULOS/PLAYER SCRIPT/Player.tscn" id="4_f3jj2"]
 [ext_resource type="PackedScene" uid="uid://cmyb7h2whlupr" path="res://Escenas/Carpeta De Progreso/moneda.tscn" id="5_v8u0u"]
 [ext_resource type="PackedScene" uid="uid://e563y5gtd6j7" path="res://Escenas/Carpeta De Progreso/enemigo.tscn" id="6_4c00g"]
 [ext_resource type="PackedScene" uid="uid://cpu0ajm40cpkq" path="res://Escenas/Obstaculos/zona_caida.tscn" id="6_brqnh"]

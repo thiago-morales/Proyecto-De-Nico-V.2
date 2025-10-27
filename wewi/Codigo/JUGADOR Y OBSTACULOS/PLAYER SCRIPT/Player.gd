@@ -57,6 +57,10 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide();
 
-func dead():
+func morir():
+	if is_dead:
+		return
+	is_dead = true
+	anim.play("Death")  # nombre exacto de tu animación
 	set_physics_process(false)
-	$AnimatedSprite2D.play("Death")
+	print("Jugador ha muerto")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=4 uid="uid://d3jbnh8knw3u7"]
 
-[ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/game_manager.gd" id="1_cxko6"]
+[ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_cxko6"]
 [ext_resource type="PackedScene" uid="uid://c3hfsd5ou4ys0" path="res://Escenas/Obstaculos/progreso.tscn" id="2_di0fu"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_3qo60"]
 [ext_resource type="Texture2D" uid="uid://p7r36jneufi6" path="res://Carpeta de Varias cosas/Fondos/desert_a.png" id="4_qx5bw"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cccwaca5c6xp8" path="res://Carpeta de Varias cosas/Decoracion/tree.png" id="8_t674p"]
 [ext_resource type="Texture2D" uid="uid://dq2hlnr6hejso" path="res://Carpeta de Varias cosas/Decoracion/tree_b.png" id="9_t0aea"]
 [ext_resource type="Texture2D" uid="uid://b7ygndrr0tt5j" path="res://Carpeta de Varias cosas/Pisos/tileset_forest.png" id="10_bunji"]
-[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Escenas/Carpeta De Progreso/Player.tscn" id="11_g7syh"]
+[ext_resource type="PackedScene" uid="uid://b3wdo4v16vqdn" path="res://Codigo/JUGADOR Y OBSTACULOS/PLAYER SCRIPT/Player.tscn" id="11_g7syh"]
 [ext_resource type="PackedScene" uid="uid://cpu0ajm40cpkq" path="res://Escenas/Obstaculos/zona_caida.tscn" id="12_ly4np"]
 [ext_resource type="PackedScene" uid="uid://bjw280vuem7xc" path="res://Escenas/Obstaculos/sierra.tscn" id="13_fhrx3"]
 [ext_resource type="PackedScene" uid="uid://cmyb7h2whlupr" path="res://Escenas/Carpeta De Progreso/moneda.tscn" id="14_p4c4q"]
