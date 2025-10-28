@@ -64,3 +64,11 @@ func morir():
 	anim.play("Death")  # nombre exacto de tu animación
 	set_physics_process(false)
 	print("Jugador ha muerto")
+
+func morir_tiempo():
+	if is_dead:
+		return
+	is_dead = true
+	anim.play("Death2")  # nombre exacto de tu animación
+	set_physics_process(false)
+	print("Jugador ha muerto")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=32 format=4 uid="uid://bmwrgcaoytdiu"]
+[gd_scene load_steps=33 format=4 uid="uid://bmwrgcaoytdiu"]
 
+[ext_resource type="PackedScene" uid="uid://c14qsyeobaf2p" path="res://Escenas/menu y selector/shader.tscn" id="1_wj8vl"]
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_yukja"]
 [ext_resource type="PackedScene" uid="uid://c3hfsd5ou4ys0" path="res://Escenas/Obstaculos/progreso.tscn" id="2_uojlr"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_wj8vl"]
@@ -595,6 +596,8 @@ _data = {
 
 [node name="Mundo 3 V_3" type="Node2D"]
 position = Vector2(68, -268)
+
+[node name="Shader_Menu_Principal" parent="." instance=ExtResource("1_wj8vl")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-69, 268)

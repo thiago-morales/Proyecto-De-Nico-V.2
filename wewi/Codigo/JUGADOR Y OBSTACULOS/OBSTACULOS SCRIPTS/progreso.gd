@@ -15,8 +15,8 @@ func _process(delta):
 	tiempo_barra.value = tiempo_actual
 	
 func fin_del_tiempo():
-	if jugador and jugador.has_method("morir"):
-		jugador.morir()
+	if jugador and jugador.has_method("morir_tiempo"):
+		jugador.morir_tiempo()
 
 	await get_tree().create_timer(1.5).timeout  # espera que termine la animación
 	get_tree().reload_current_scene()

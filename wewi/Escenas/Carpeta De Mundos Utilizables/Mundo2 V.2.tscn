@@ -1,6 +1,7 @@
-[gd_scene load_steps=34 format=4 uid="uid://bobs5iboboxme"]
+[gd_scene load_steps=35 format=4 uid="uid://bobs5iboboxme"]
 
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_gs5wf"]
+[ext_resource type="PackedScene" uid="uid://c14qsyeobaf2p" path="res://Escenas/menu y selector/shader.tscn" id="1_vf361"]
 [ext_resource type="PackedScene" uid="uid://c3hfsd5ou4ys0" path="res://Escenas/Obstaculos/progreso.tscn" id="2_vf361"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_4dh45"]
 [ext_resource type="Script" uid="uid://bjp8amwt56rw7" path="res://Codigo/huds/hud Nivel 2.gd" id="4_eoiph"]
@@ -632,6 +633,8 @@ _data = {
 
 [node name="Mundo2 V_2" type="Node2D"]
 position = Vector2(71, -268)
+
+[node name="Shader_Menu_Principal" parent="." instance=ExtResource("1_vf361")]
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
