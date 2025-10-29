@@ -173,6 +173,8 @@ script = ExtResource("1_kpjcp")
 sprite_frames = SubResource("SpriteFrames_r3kul")
 animation = &"Death2"
 autoplay = "Death"
+frame = 10
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -0.5)

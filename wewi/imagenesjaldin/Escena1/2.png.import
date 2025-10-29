@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpdglurbf3x58"
-path="res://.godot/imported/Captura de pantalla 2025-10-14 151407.png-5150f1b23c12b27f581b3d19379f243f.ctex"
+uid="uid://u3sbgbsxbvhp"
+path="res://.godot/imported/2.png-b5509bbd37d169804d4a60d7d9ea7f61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenesjaldin/Escena 1/Captura de pantalla 2025-10-14 151407.png"
-dest_files=["res://.godot/imported/Captura de pantalla 2025-10-14 151407.png-5150f1b23c12b27f581b3d19379f243f.ctex"]
+source_file="res://imagenesjaldin/Escena1/2.png"
+dest_files=["res://.godot/imported/2.png-b5509bbd37d169804d4a60d7d9ea7f61.ctex"]
 
 [params]
 

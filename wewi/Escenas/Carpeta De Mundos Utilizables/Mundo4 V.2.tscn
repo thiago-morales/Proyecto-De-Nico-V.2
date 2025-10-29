@@ -639,7 +639,7 @@ position = Vector2(335, 460)
 position = Vector2(400, 383)
 
 [node name="Area2D9" parent="sierra" instance=ExtResource("13_4blw5")]
-position = Vector2(575, 473)
+position = Vector2(586, 469)
 
 [node name="Area2D10" parent="sierra" instance=ExtResource("13_4blw5")]
 position = Vector2(511, 681)
@@ -653,7 +653,7 @@ position = Vector2(426, 421)
 position = Vector2(181, 393)
 
 [node name="PointLight2D6" type="PointLight2D" parent="monedas/Moneda5"]
-position = Vector2(766, 122)
+position = Vector2(1, 1)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
 
@@ -661,7 +661,7 @@ texture = SubResource("GradientTexture2D_dh8cn")
 position = Vector2(385, 462)
 
 [node name="PointLight2D2" type="PointLight2D" parent="monedas/Moneda"]
-position = Vector2(-203, -69)
+position = Vector2(0, -1)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
 
@@ -669,7 +669,7 @@ texture = SubResource("GradientTexture2D_dh8cn")
 position = Vector2(520, 492)
 
 [node name="PointLight2D3" type="PointLight2D" parent="monedas/Moneda2"]
-position = Vector2(-134, -30)
+position = Vector2(1, -2)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
 
@@ -677,7 +677,7 @@ texture = SubResource("GradientTexture2D_dh8cn")
 position = Vector2(556, 685)
 
 [node name="PointLight2D4" type="PointLight2D" parent="monedas/Moneda3"]
-position = Vector2(-36, -193)
+position = Vector2(0, 1)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
 
@@ -685,7 +685,7 @@ texture = SubResource("GradientTexture2D_dh8cn")
 position = Vector2(949, 514)
 
 [node name="PointLight2D5" type="PointLight2D" parent="monedas/Moneda4"]
-position = Vector2(-394, 172)
+position = Vector2(1, -1)
 scale = Vector2(0.703125, 0.664063)
 texture = SubResource("GradientTexture2D_dh8cn")
 
