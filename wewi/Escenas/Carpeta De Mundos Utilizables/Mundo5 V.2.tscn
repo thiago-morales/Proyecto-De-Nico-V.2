@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://d2gmmgl0a4rde"]
+[gd_scene load_steps=33 format=4 uid="uid://d2gmmgl0a4rde"]
 
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_1bvkb"]
 [ext_resource type="Texture2D" uid="uid://dddv78qp2vw4q" path="res://Carpeta de Varias cosas/Fondos/ChatGPT Image 14 oct 2025, 10_46_02.png" id="1_fnnlt"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_fnnlt"]
 [ext_resource type="Script" uid="uid://dnlu1t83kdlhg" path="res://Codigo/huds/hud Nivel 5.gd" id="4_3u0cm"]
 [ext_resource type="Texture2D" uid="uid://p7r36jneufi6" path="res://Carpeta de Varias cosas/Fondos/desert_a.png" id="4_xtsk1"]
+[ext_resource type="PackedScene" uid="uid://cn4ubtcm6w22n" path="res://Escenas/menu y selector/pausa.tscn" id="5_jhk44"]
 [ext_resource type="Texture2D" uid="uid://qntiqstrj5fp" path="res://Carpeta de Varias cosas/Pisos/tileset_water.png" id="5_qse8h"]
 [ext_resource type="Texture2D" uid="uid://co0byp5neevj3" path="res://Carpeta de Varias cosas/Decoracion/lava.png" id="6_jhk44"]
 [ext_resource type="Texture2D" uid="uid://byarikmkx0wkh" path="res://Carpeta de Varias cosas/Pisos/tileset_lava.png" id="7_qnx7b"]
@@ -585,6 +586,8 @@ script = ExtResource("1_1bvkb")
 [node name="Progreso" parent="." instance=ExtResource("2_3u0cm")]
 offset = Vector2(700, 0)
 transform = Transform2D(1, 0, 0, 1, 700, 0)
+
+[node name="Pausa" parent="." instance=ExtResource("5_jhk44")]
 
 [node name="HUD Nivel 5" parent="." instance=ExtResource("3_fnnlt")]
 script = ExtResource("4_3u0cm")

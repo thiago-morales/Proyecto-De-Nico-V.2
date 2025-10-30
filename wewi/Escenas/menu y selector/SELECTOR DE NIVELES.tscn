@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3to3vhnxklpn"]
+[gd_scene load_steps=8 format=3 uid="uid://b3to3vhnxklpn"]
 
 [ext_resource type="Script" uid="uid://c0f57ewx7iqao" path="res://Codigo/Menus y mundos scrips/selector_de_niveles.gd" id="1_hp44e"]
-[ext_resource type="PackedScene" uid="uid://b684n3tuh4xsh" path="res://Escenas/menu y selector/movimiento2.0.tscn" id="2_h5c6m"]
 [ext_resource type="FontFile" uid="uid://e8316r6wpeo8" path="res://CreakingCrypt-Regular.otf" id="3_8c7s2"]
 [ext_resource type="FontFile" uid="uid://cxkfboxvo2ngv" path="res://Warm Winter.ttf" id="4_nbnde"]
 
@@ -72,8 +71,6 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.725369, 0.860403)
 script = ExtResource("1_hp44e")
-
-[node name="ParallaxBackground" parent="." instance=ExtResource("2_h5c6m")]
 
 [node name="niveles" type="VBoxContainer" parent="."]
 texture_filter = 2
