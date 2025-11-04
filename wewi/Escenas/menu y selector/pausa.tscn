@@ -37,4 +37,3 @@ grow_vertical = 2
 color = Color(1, 1, 1, 0.0156863)
 
 [node name="Shader_Menu_Principal" parent="." instance=ExtResource("3_dwhr8")]
-visible = false

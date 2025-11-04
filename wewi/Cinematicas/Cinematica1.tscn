@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://doymeutpccem7"]
 
-[ext_resource type="Script" uid="uid://jfrp4lsfkcok" path="res://Codigo/Menus y mundos scrips/imagenes.gd" id="1_sf62p"]
-[ext_resource type="Texture2D" uid="uid://dsrbepvp82tlw" path="res://Carpeta de Varias cosas/Fondos/fondo negro.png" id="2_i0eu0"]
-[ext_resource type="Texture2D" uid="uid://bbvua3xe62wvn" path="res://imagenesjaldin/Escena1/1.png" id="3_sf62p"]
-[ext_resource type="Texture2D" uid="uid://u3sbgbsxbvhp" path="res://imagenesjaldin/Escena1/2.png" id="4_i0eu0"]
-[ext_resource type="Texture2D" uid="uid://6i8xp13ddmby" path="res://imagenesjaldin/Escena1/3.png" id="5_xllyn"]
-[ext_resource type="Texture2D" uid="uid://bl57r4baw66gs" path="res://imagenesjaldin/Escena1/4.png" id="6_gh0kv"]
-[ext_resource type="Texture2D" uid="uid://dtwdepjhf0n1d" path="res://imagenesjaldin/Escena1/5.png" id="7_e31dw"]
-[ext_resource type="Texture2D" uid="uid://htchtglh4vkn" path="res://imagenesjaldin/Escena1/6.png" id="8_fom1k"]
+[ext_resource type="Script" uid="uid://damewvsfcygg2" path="res://cinematica_1.gd" id="1_bkb5y"]
+[ext_resource type="Texture2D" uid="uid://dsrbepvp82tlw" path="res://Carpeta de Varias cosas/Fondos/fondo negro.png" id="2_rp0hf"]
+[ext_resource type="Texture2D" uid="uid://bbvua3xe62wvn" path="res://imagenesjaldin/Escena1/1.png" id="3_4v86c"]
+[ext_resource type="Texture2D" uid="uid://u3sbgbsxbvhp" path="res://imagenesjaldin/Escena1/2.png" id="4_yksdc"]
+[ext_resource type="Texture2D" uid="uid://6i8xp13ddmby" path="res://imagenesjaldin/Escena1/3.png" id="5_nbr8m"]
+[ext_resource type="Texture2D" uid="uid://bl57r4baw66gs" path="res://imagenesjaldin/Escena1/4.png" id="6_lvjhn"]
+[ext_resource type="Texture2D" uid="uid://dtwdepjhf0n1d" path="res://imagenesjaldin/Escena1/5.png" id="7_prgme"]
+[ext_resource type="Texture2D" uid="uid://htchtglh4vkn" path="res://imagenesjaldin/Escena1/6.png" id="8_hin6l"]
 
 [sub_resource type="Gradient" id="Gradient_d8x0e"]
 interpolation_mode = 2
@@ -24,18 +24,18 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0, 0.5)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_sf62p")
+script = ExtResource("1_bkb5y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(800, 474)
 scale = Vector2(5.58936, 2.11077)
-texture = ExtResource("2_i0eu0")
+texture = ExtResource("2_rp0hf")
 
 [node name="Icon" type="Sprite2D" parent="."]
 light_mask = 8193
 position = Vector2(269.5, 196)
 scale = Vector2(0.2705, 0.245)
-texture = ExtResource("3_sf62p")
+texture = ExtResource("3_4v86c")
 
 [node name="PointLight2D5" type="PointLight2D" parent="Icon"]
 position = Vector2(-31.4234, -28.5714)
@@ -46,7 +46,7 @@ texture_scale = 1.3
 [node name="Icon2" type="Sprite2D" parent="."]
 position = Vector2(803, 196)
 scale = Vector2(0.25277, 0.245)
-texture = ExtResource("4_i0eu0")
+texture = ExtResource("4_yksdc")
 
 [node name="PointLight2D4" type="PointLight2D" parent="Icon2"]
 position = Vector2(-5.93452, -46.9387)
@@ -57,7 +57,7 @@ texture_scale = 1.3
 [node name="Icon3" type="Sprite2D" parent="."]
 position = Vector2(1333, 196)
 scale = Vector2(0.266297, 0.245)
-texture = ExtResource("5_xllyn")
+texture = ExtResource("5_nbr8m")
 
 [node name="PointLight2D3" type="PointLight2D" parent="Icon3"]
 position = Vector2(43.1866, -14.2857)
@@ -68,7 +68,7 @@ texture_scale = 1.3
 [node name="Icon4" type="Sprite2D" parent="."]
 position = Vector2(270.5, 705.5)
 scale = Vector2(0.2695, 0.258125)
-texture = ExtResource("6_gh0kv")
+texture = ExtResource("6_lvjhn")
 
 [node name="PointLight2D" type="PointLight2D" parent="Icon4"]
 position = Vector2(7.42122, -66.5551)
@@ -79,7 +79,7 @@ texture_scale = 1.3
 [node name="Icon5" type="Sprite2D" parent="."]
 position = Vector2(782, 697)
 scale = Vector2(0.253, 0.22375)
-texture = ExtResource("7_e31dw")
+texture = ExtResource("7_prgme")
 
 [node name="PointLight2D2" type="PointLight2D" parent="Icon5"]
 position = Vector2(9.88136, 69.3517)
@@ -90,7 +90,7 @@ texture_scale = 1.3
 [node name="Icon6" type="Sprite2D" parent="."]
 position = Vector2(1334.27, 699.5)
 scale = Vector2(0.267272, 0.250625)
-texture = ExtResource("8_fom1k")
+texture = ExtResource("8_hin6l")
 
 [node name="PointLight2D2" type="PointLight2D" parent="Icon6"]
 position = Vector2(6.46553, -11.9701)
