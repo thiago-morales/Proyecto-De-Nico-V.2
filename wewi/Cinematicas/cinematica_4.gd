@@ -90,4 +90,4 @@ func _process(delta):
 						tween_light_on.tween_property(next_light, "energy", 1.0, 0.3).set_delay(0.3)
 				else:
 					# Si ya no hay más imágenes, pasar de escena
-					get_tree().change_scene_to_file("res://Escenas/menu y selector/menu.tscn")
+					get_tree().change_scene_to_file("res://Escenas/menu y selector/despedida.tscn")
