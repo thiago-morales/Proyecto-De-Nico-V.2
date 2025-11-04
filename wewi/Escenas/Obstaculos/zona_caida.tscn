@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpu0ajm40cpkq"]
+[gd_scene load_steps=3 format=3 uid="uid://cpu0ajm40cpkq"]
 
 [ext_resource type="Script" uid="uid://da2tcgc8vv7bl" path="res://Codigo/Menus y mundos scrips/Caida.gd" id="1_46yk1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dtm8d"]
 
 [node name="ZonaCaida" type="Area2D"]
 collision_mask = 2
 script = ExtResource("1_46yk1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_dtm8d")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
