@@ -63,7 +63,9 @@ func morir():
 	is_dead = true
 	anim.play("Death")  # nombre exacto de tu animación
 	set_physics_process(false)
-	print("Jugador ha muerto")
+	VariablesGlobales.intentos +=1
+	
+	print("Jugador ha muerto: ",VariablesGlobales.intentos)
 
 func morir_tiempo():
 	if is_dead:

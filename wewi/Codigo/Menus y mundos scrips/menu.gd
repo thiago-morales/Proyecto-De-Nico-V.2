@@ -1,6 +1,7 @@
 extends Control
 
-
+func _ready() -> void:
+	VariablesGlobales.intentos = 0
 
 
 func _on_inicio_pressed() -> void:

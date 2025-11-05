@@ -13,12 +13,5 @@ func _on_puntuacion_actualizada(puntuaction_actual:int) -> void:
 		
 		if puntuaction_actual == 5: 
 			print("cambio de nivel") 
-			get_tree().change_scene_to_file("res://Escenas/Carpeta De Mundos Utilizables/Mundo4 V.2.tscn")
-
-
-func _process(delta: float) -> void:
-	if Input.is_key_pressed(KEY_CTRL) and Input.is_key_pressed(KEY_S):
-		get_tree().change_scene_to_file("res://Cinematicas/cinematica3.tscn")
-	
-
+			get_tree().change_scene_to_file("res://Cinematicas/Cinematica3.tscn")
 	
