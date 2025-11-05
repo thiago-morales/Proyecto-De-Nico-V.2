@@ -615,7 +615,7 @@ texture = SubResource("GradientTexture2D_dh8cn")
 [node name="ZonaCaida" parent="." instance=ExtResource("12_cxvfj")]
 position = Vector2(104, 696)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaCaida"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ZonaCaida"]
 position = Vector2(275, 178)
 shape = SubResource("WorldBoundaryShape2D_jlv7k")
 

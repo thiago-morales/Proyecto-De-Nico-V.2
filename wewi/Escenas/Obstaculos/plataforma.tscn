@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bte5w24cpmlwy"]
+
+[ext_resource type="Texture2D" uid="uid://b3d31btvaihwx" path="res://Carpeta de Varias cosas/Fondos/Gemini_Generated_Image_zi95imzi95imzi95_cola-removebg-preview.png" id="1_63sbn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7tip4"]
+size = Vector2(48, 8)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-7.86827, -0.668141)
+rotation = 1.56427
+scale = Vector2(0.0554244, 0.0611383)
+texture = ExtResource("1_63sbn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 4)
+shape = SubResource("RectangleShape2D_7tip4")
+one_way_collision = true

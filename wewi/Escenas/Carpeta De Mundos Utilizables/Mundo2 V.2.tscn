@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://cpu0ajm40cpkq" path="res://Escenas/Obstaculos/zona_caida.tscn" id="13_5wooc"]
 [ext_resource type="PackedScene" uid="uid://bjw280vuem7xc" path="res://Escenas/Obstaculos/sierra.tscn" id="14_4bigc"]
 [ext_resource type="PackedScene" uid="uid://cmyb7h2whlupr" path="res://Escenas/Carpeta De Progreso/moneda.tscn" id="15_xwslk"]
-[ext_resource type="PackedScene" uid="uid://bte5w24cpmlwy" path="res://Escenas/Obstaculos/plataforma.tscn" id="16_fad4f"]
+[ext_resource type="PackedScene" path="res://Escenas/Obstaculos/plataforma.tscn" id="16_fad4f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_thldv"]
 texture = ExtResource("5_07knk")
@@ -665,9 +665,9 @@ tile_set = SubResource("TileSet_5yunf")
 position = Vector2(40, 384)
 
 [node name="ZonaCaida" parent="." instance=ExtResource("13_5wooc")]
-position = Vector2(104, 696)
+position = Vector2(233, 828)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaCaida"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ZonaCaida"]
 position = Vector2(275, 178)
 shape = SubResource("WorldBoundaryShape2D_jlv7k")
 
