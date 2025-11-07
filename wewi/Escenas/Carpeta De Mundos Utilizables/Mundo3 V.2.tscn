@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cpu0ajm40cpkq" path="res://Escenas/Obstaculos/zona_caida.tscn" id="12_f5g34"]
 [ext_resource type="PackedScene" uid="uid://bjw280vuem7xc" path="res://Escenas/Obstaculos/sierra.tscn" id="13_x440c"]
 [ext_resource type="PackedScene" uid="uid://cmyb7h2whlupr" path="res://Escenas/Carpeta De Progreso/moneda.tscn" id="14_cfry6"]
-[ext_resource type="PackedScene" path="res://Escenas/Obstaculos/plataforma.tscn" id="15_pduhq"]
+[ext_resource type="PackedScene" uid="uid://bte5w24cpmlwy" path="res://Escenas/Obstaculos/plataforma.tscn" id="15_pduhq"]
 [ext_resource type="PackedScene" uid="uid://cm4bi7tvd1tjq" path="res://Escenas/Obstaculos/pinchos.tscn" id="16_cstox"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_thldv"]
