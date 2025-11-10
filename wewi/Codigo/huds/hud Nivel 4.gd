@@ -20,5 +20,6 @@ func _process(delta: float) -> void:
 	if Input.is_key_pressed(KEY_CTRL) and Input.is_key_pressed(KEY_S):
 		get_tree().change_scene_to_file("res://Escenas/Carpeta De Mundos Utilizables/Mundo5 V.2.tscn")
 	
-
+	if Input.is_key_pressed(KEY_SHIFT) and Input.is_key_pressed(KEY_K):
+		get_tree().change_scene_to_file("res://Escenas/menu y selector/menu.tscn")
 	
