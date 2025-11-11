@@ -1,5 +1,6 @@
-[gd_scene load_steps=36 format=4 uid="uid://bobs5iboboxme"]
+[gd_scene load_steps=37 format=4 uid="uid://bobs5iboboxme"]
 
+[ext_resource type="Script" uid="uid://dhmypwkfvejd0" path="res://Codigo/huds/mundo_2_v.2.gd" id="1_eoiph"]
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_gs5wf"]
 [ext_resource type="PackedScene" uid="uid://c3hfsd5ou4ys0" path="res://Escenas/Obstaculos/progreso.tscn" id="2_vf361"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_4dh45"]
@@ -2724,6 +2725,7 @@ _data = {
 
 [node name="Mundo2 V_2" type="Node2D"]
 position = Vector2(71, -268)
+script = ExtResource("1_eoiph")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true

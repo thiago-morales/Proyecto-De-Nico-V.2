@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://boo8c5vmtmk07"
+path="res://.godot/imported/candidato2 (1).mp3-c8a32b2195c9fd5c7131ecf388fe5b22.mp3str"
+
+[deps]
+
+source_file="res://musica/candidato2 (1).mp3"
+dest_files=["res://.godot/imported/candidato2 (1).mp3-c8a32b2195c9fd5c7131ecf388fe5b22.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

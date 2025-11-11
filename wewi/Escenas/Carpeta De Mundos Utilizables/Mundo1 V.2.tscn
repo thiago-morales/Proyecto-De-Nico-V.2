@@ -1,5 +1,6 @@
-[gd_scene load_steps=34 format=4 uid="uid://dbhoebmfdttjs"]
+[gd_scene load_steps=35 format=4 uid="uid://dbhoebmfdttjs"]
 
+[ext_resource type="Script" uid="uid://dwfon6heuhd1w" path="res://Codigo/huds/mundo_1_v.2.gd" id="1_aycbh"]
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_km67l"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_5jijr"]
 [ext_resource type="Texture2D" uid="uid://p7r36jneufi6" path="res://Carpeta de Varias cosas/Fondos/desert_a.png" id="4_1t8e1"]
@@ -2681,6 +2682,7 @@ distance = -1.0
 
 [node name="Mundo1 V_2" type="Node2D"]
 position = Vector2(72, -280)
+script = ExtResource("1_aycbh")
 metadata/_edit_horizontal_guides_ = [156.0]
 
 [node name="GameManager" type="Node" parent="."]

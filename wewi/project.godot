@@ -21,6 +21,7 @@ Musica="*res://Escenas/Carpeta De Progreso/musica.tscn"
 Gameaudio="*res://Escenas/Carpeta De Progreso/gameaudio.tscn"
 GameData="*res://Codigo/game_data.gd"
 VariablesGlobales="*res://Codigo/VariablesGlobales.gd"
+MusicManager="*res://MusicManager.tscn"
 
 [display]
 

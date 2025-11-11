@@ -1,6 +1,7 @@
 [gd_scene load_steps=33 format=4 uid="uid://d2gmmgl0a4rde"]
 
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_1bvkb"]
+[ext_resource type="Script" uid="uid://b40gvdk4bt1fi" path="res://Codigo/huds/mundo_5_v.2.gd" id="1_qse8h"]
 [ext_resource type="PackedScene" uid="uid://c3hfsd5ou4ys0" path="res://Escenas/Obstaculos/progreso.tscn" id="2_3u0cm"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_fnnlt"]
 [ext_resource type="Script" uid="uid://dnlu1t83kdlhg" path="res://Codigo/huds/hud Nivel 5.gd" id="4_3u0cm"]
@@ -4535,11 +4536,9 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0, 0.5)
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jlv7k"]
-distance = -1.0
-
 [node name="Mundo 5 V_2" type="Node2D"]
 position = Vector2(72, -280)
+script = ExtResource("1_qse8h")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -4578,11 +4577,7 @@ visible = false
 texture = SubResource("GradientTexture2D_dh8cn")
 
 [node name="ZonaCaida" parent="." instance=ExtResource("12_8a5ag")]
-position = Vector2(104, 696)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="ZonaCaida"]
-position = Vector2(275, 178)
-shape = SubResource("WorldBoundaryShape2D_jlv7k")
+position = Vector2(465, 824)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-72, 280)

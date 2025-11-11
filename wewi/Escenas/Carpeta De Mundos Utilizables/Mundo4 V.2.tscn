@@ -1,6 +1,7 @@
-[gd_scene load_steps=32 format=4 uid="uid://dvlc5eg6shh35"]
+[gd_scene load_steps=33 format=4 uid="uid://dvlc5eg6shh35"]
 
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_m6584"]
+[ext_resource type="Script" uid="uid://mv3b8c38swfe" path="res://Codigo/huds/mundo_4_v.2.gd" id="1_wv5k7"]
 [ext_resource type="PackedScene" uid="uid://c3hfsd5ou4ys0" path="res://Escenas/Obstaculos/progreso.tscn" id="2_56b6s"]
 [ext_resource type="PackedScene" uid="uid://caxprlno1v3jj" path="res://Escenas/Carpeta De Progreso/hud.tscn" id="3_vrata"]
 [ext_resource type="Script" uid="uid://crjjf5jkgv5dd" path="res://Codigo/huds/hud Nivel 4.gd" id="4_56b6s"]
@@ -4538,6 +4539,7 @@ distance = -1.0
 
 [node name="Mundo4 V_2" type="Node2D"]
 position = Vector2(72, -281)
+script = ExtResource("1_wv5k7")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -4678,5 +4680,4 @@ position = Vector2(670, 653)
 position = Vector2(40, 400)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0, 0, 0, 1)

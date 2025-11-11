@@ -10,6 +10,7 @@ var original_position = Vector2()  # posición inicial de la cámara
 @onready var camera = $Camera2D
 
 func _ready():
+	MusicManager.play_track("intro")
 	lights = [
 		$Icon/PointLight2D5,
 		$Icon2/PointLight2D4,
