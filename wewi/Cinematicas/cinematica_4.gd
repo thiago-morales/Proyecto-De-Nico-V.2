@@ -8,9 +8,11 @@ var zoomed_in = false
 var original_position = Vector2()  # posición inicial de la cámara
 
 @onready var camera = $Camera2D
+@onready var label_light = $label/PointLight2D3  # luz del label
 
 func _ready():
 	MusicManager.play_track("intro")
+
 	lights = [
 		$Icon/PointLight2D5,
 		$Icon2/PointLight2D4,
@@ -36,11 +38,20 @@ func _ready():
 		l.texture_scale = 1.4
 		l.energy = 0
 
+	label_light.visible = true
+	label_light.energy = 1.0  # inicia encendida
+
 	camera.zoom = Vector2(1, 1)
 	original_position = camera.position  # guardamos la posición inicial
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
+		# Apagar la luz del label solo la primera vez
+		if current_index == 0 and label_light.energy > 0:
+			var tween_label = create_tween()
+			tween_label.tween_property(label_light, "energy", 0.0, 0.6).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+			# luego sigue el flujo normal del primer clic
+
 		if current_index < lights.size():
 			var light = lights[current_index]
 			var sprite = sprites[current_index]
@@ -91,4 +102,4 @@ func _process(delta):
 						tween_light_on.tween_property(next_light, "energy", 1.0, 0.3).set_delay(0.3)
 				else:
 					# Si ya no hay más imágenes, pasar de escena
-					get_tree().change_scene_to_file("res://Escenas/menu y selector/despedida.tscn")
+					get_tree().change_scene_to_file("res://Escenas/Carpeta De Mundos Utilizables/Mundo5 V.2.tscn")
