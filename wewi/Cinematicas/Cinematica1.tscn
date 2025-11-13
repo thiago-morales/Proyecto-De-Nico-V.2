@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://damewvsfcygg2" path="res://cinematica_1.gd" id="1_bkb5y"]
 [ext_resource type="Texture2D" uid="uid://dsrbepvp82tlw" path="res://Carpeta de Varias cosas/Fondos/fondo negro.png" id="2_rp0hf"]
-[ext_resource type="Texture2D" uid="uid://bbvua3xe62wvn" path="res://imagenesjaldin/Escena1/1.png" id="3_4v86c"]
-[ext_resource type="Texture2D" uid="uid://u3sbgbsxbvhp" path="res://imagenesjaldin/Escena1/2.png" id="4_yksdc"]
-[ext_resource type="Texture2D" uid="uid://6i8xp13ddmby" path="res://imagenesjaldin/Escena1/3.png" id="5_nbr8m"]
-[ext_resource type="Texture2D" uid="uid://bl57r4baw66gs" path="res://imagenesjaldin/Escena1/4.png" id="6_lvjhn"]
-[ext_resource type="Texture2D" uid="uid://dtwdepjhf0n1d" path="res://imagenesjaldin/Escena1/5.png" id="7_prgme"]
-[ext_resource type="Texture2D" uid="uid://htchtglh4vkn" path="res://imagenesjaldin/Escena1/6.png" id="8_hin6l"]
+[ext_resource type="Texture2D" uid="uid://d4dnwrnx0qgge" path="res://imagenesjaldin/escena 1 mundo 2/6.png" id="3_bkb5y"]
+[ext_resource type="Texture2D" uid="uid://dbuinbgknvby8" path="res://imagenesjaldin/escena 1 mundo 2/7.png" id="4_rp0hf"]
+[ext_resource type="Texture2D" uid="uid://dfk8p2t7a7536" path="res://imagenesjaldin/escena 1 mundo 2/8.png" id="5_4v86c"]
+[ext_resource type="Texture2D" uid="uid://mxjumoxfwq7n" path="res://imagenesjaldin/escena 1 mundo 2/9.png" id="6_yksdc"]
+[ext_resource type="Texture2D" uid="uid://ct0nhu4vd5y5a" path="res://imagenesjaldin/escena 1 mundo 2/10.png" id="7_nbr8m"]
+[ext_resource type="Texture2D" uid="uid://c02fawc5hnllq" path="res://imagenesjaldin/escena 1 mundo 2/11.png" id="8_lvjhn"]
 
 [sub_resource type="Gradient" id="Gradient_d8x0e"]
 interpolation_mode = 2
@@ -32,69 +32,68 @@ scale = Vector2(5.58936, 2.11077)
 texture = ExtResource("2_rp0hf")
 
 [node name="Icon" type="Sprite2D" parent="."]
-light_mask = 8193
-position = Vector2(269.5, 196)
-scale = Vector2(0.2705, 0.245)
-texture = ExtResource("3_4v86c")
+position = Vector2(269, 197)
+scale = Vector2(0.26125, 0.269063)
+texture = ExtResource("3_bkb5y")
 
 [node name="PointLight2D5" type="PointLight2D" parent="Icon"]
-position = Vector2(-31.4234, -28.5714)
-scale = Vector2(12.9746, 10.7928)
+position = Vector2(11.4834, -18.5832)
+scale = Vector2(12.2147, 9.62653)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(803, 196)
-scale = Vector2(0.25277, 0.245)
-texture = ExtResource("4_yksdc")
+position = Vector2(802, 196)
+scale = Vector2(0.21775, 0.238125)
+texture = ExtResource("4_rp0hf")
 
 [node name="PointLight2D4" type="PointLight2D" parent="Icon2"]
-position = Vector2(-5.93452, -46.9387)
-scale = Vector2(12.6245, 10.572)
+position = Vector2(-2.29688, -48.2939)
+scale = Vector2(14.6549, 10.8772)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon3" type="Sprite2D" parent="."]
-position = Vector2(1333, 196)
-scale = Vector2(0.266297, 0.245)
-texture = ExtResource("5_nbr8m")
+position = Vector2(1335, 196.5)
+scale = Vector2(0.206, 0.253125)
+texture = ExtResource("5_4v86c")
 
 [node name="PointLight2D3" type="PointLight2D" parent="Icon3"]
-position = Vector2(43.1866, -14.2857)
-scale = Vector2(13.0214, 10.9645)
+position = Vector2(46.1182, -15.8027)
+scale = Vector2(16.8328, 10.6126)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon4" type="Sprite2D" parent="."]
-position = Vector2(270.5, 705.5)
-scale = Vector2(0.2695, 0.258125)
-texture = ExtResource("6_lvjhn")
+position = Vector2(268, 701)
+scale = Vector2(0.236, 0.22125)
+texture = ExtResource("6_yksdc")
 
 [node name="PointLight2D" type="PointLight2D" parent="Icon4"]
-position = Vector2(7.42122, -66.5551)
-scale = Vector2(12.5098, 9.39093)
+position = Vector2(19.068, -57.3088)
+scale = Vector2(14.2856, 10.9561)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon5" type="Sprite2D" parent="."]
-position = Vector2(782, 697)
-scale = Vector2(0.253, 0.22375)
-texture = ExtResource("7_prgme")
+position = Vector2(783.25, 700)
+scale = Vector2(0.23625, 0.24625)
+texture = ExtResource("7_nbr8m")
 
 [node name="PointLight2D2" type="PointLight2D" parent="Icon5"]
-position = Vector2(9.88136, 69.3517)
-scale = Vector2(12.423, 10.0173)
+position = Vector2(5.29077, -18.2754)
+scale = Vector2(13.3038, 9.78621)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 
 [node name="Icon6" type="Sprite2D" parent="."]
-position = Vector2(1334.27, 699.5)
-scale = Vector2(0.267272, 0.250625)
-texture = ExtResource("8_hin6l")
+position = Vector2(1334, 697.5)
+scale = Vector2(0.234, 0.238125)
+texture = ExtResource("8_lvjhn")
 
 [node name="PointLight2D2" type="PointLight2D" parent="Icon6"]
-position = Vector2(6.46553, -11.9701)
-scale = Vector2(12.5916, 9.80721)
+position = Vector2(8.53809, -4.19971)
+scale = Vector2(14.382, 10.322)
 texture = SubResource("GradientTexture2D_rcrb7")
 texture_scale = 1.3
 

@@ -1,31 +1,31 @@
 [gd_scene load_steps=8 format=3 uid="uid://bjw280vuem7xc"]
 
 [ext_resource type="Script" uid="uid://bimixjlyn2adf" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/sierra.gd" id="1_4la8x"]
-[ext_resource type="Texture2D" uid="uid://0ws04qa2vovo" path="res://Carpeta de Varias cosas/Enemigos/saw.png" id="1_fatpt"]
+[ext_resource type="Texture2D" uid="uid://celnjhuyx12li" path="res://Carpeta de Varias cosas/Enemigos/saw22.png" id="2_s8dmf"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4la8x"]
-atlas = ExtResource("1_fatpt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb3vq"]
+atlas = ExtResource("2_s8dmf")
 region = Rect2(0, 0, 34, 34)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w1ugr"]
-atlas = ExtResource("1_fatpt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_78llk"]
+atlas = ExtResource("2_s8dmf")
 region = Rect2(0, 34, 34, 34)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_uejn8"]
-atlas = ExtResource("1_fatpt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxd0d"]
+atlas = ExtResource("2_s8dmf")
 region = Rect2(34, 34, 34, 34)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tq5tf"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4la8x")
+"texture": SubResource("AtlasTexture_yb3vq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_w1ugr")
+"texture": SubResource("AtlasTexture_78llk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uejn8")
+"texture": SubResource("AtlasTexture_cxd0d")
 }],
 "loop": true,
 "name": &"Idle",
@@ -43,6 +43,7 @@ script = ExtResource("1_4la8x")
 sprite_frames = SubResource("SpriteFrames_tq5tf")
 animation = &"Idle"
 autoplay = "Idle"
+frame_progress = 0.711108
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_0l7mi")

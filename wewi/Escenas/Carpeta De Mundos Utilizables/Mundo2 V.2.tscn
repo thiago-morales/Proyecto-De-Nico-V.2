@@ -2758,7 +2758,7 @@ tile_set = SubResource("TileSet_5yunf")
 position = Vector2(40, 384)
 
 [node name="ZonaCaida" parent="." instance=ExtResource("13_5wooc")]
-position = Vector2(233, 828)
+position = Vector2(385, 813)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="ZonaCaida"]
 position = Vector2(275, 178)

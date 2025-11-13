@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkjb4dcfdy32b"
-path="res://.godot/imported/tornado_sand.png-4eea94d47ddd53ccd844ccdd08d91411.ctex"
+uid="uid://dy2itwrbv0lmx"
+path="res://.godot/imported/9.png-6ed240614066db179dcbb78f2ebe3603.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Carpeta de Varias cosas/Enemigos/tornado_sand.png"
-dest_files=["res://.godot/imported/tornado_sand.png-4eea94d47ddd53ccd844ccdd08d91411.ctex"]
+source_file="res://imagenesjaldin/escena 2 mundo 3/9.png"
+dest_files=["res://.godot/imported/9.png-6ed240614066db179dcbb78f2ebe3603.ctex"]
 
 [params]
 

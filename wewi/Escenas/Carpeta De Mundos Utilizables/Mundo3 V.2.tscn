@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://dksmntnlrxt1t"]
+[gd_scene load_steps=34 format=4 uid="uid://dksmntnlrxt1t"]
 
 [ext_resource type="Script" uid="uid://deepv2dl415r8" path="res://Codigo/huds/mundo_3_v.2.gd" id="1_6c1s4"]
 [ext_resource type="Script" uid="uid://cdticfbpcsrwj" path="res://Codigo/JUGADOR Y OBSTACULOS/OBSTACULOS SCRIPTS/game_manager.gd" id="1_yukja"]
@@ -2645,9 +2645,6 @@ sources/4 = SubResource("TileSetAtlasSource_d0yv4")
 sources/5 = SubResource("TileSetAtlasSource_kb4mv")
 sources/6 = SubResource("TileSetAtlasSource_61kyd")
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jlv7k"]
-distance = -1.0
-
 [sub_resource type="Animation" id="Animation_hblku"]
 length = 0.001
 tracks/0/type = "value"
@@ -2738,11 +2735,7 @@ tile_set = SubResource("TileSet_5yunf")
 position = Vector2(24, 384)
 
 [node name="ZonaCaida" parent="." instance=ExtResource("12_f5g34")]
-position = Vector2(114, 636)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="ZonaCaida"]
-position = Vector2(275, 178)
-shape = SubResource("WorldBoundaryShape2D_jlv7k")
+position = Vector2(161, 807)
 
 [node name="sierra" type="Node2D" parent="."]
 

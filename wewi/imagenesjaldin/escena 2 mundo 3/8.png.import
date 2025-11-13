@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dti2rfsq1lqbs"
-path="res://.godot/imported/shark.png-c0faf1914b63f0ce0da7973a5a62a455.ctex"
+uid="uid://d1olfadb3btjs"
+path="res://.godot/imported/8.png-dfabd62868c4fce30d5be8df078dd059.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Carpeta de Varias cosas/Enemigos/shark.png"
-dest_files=["res://.godot/imported/shark.png-c0faf1914b63f0ce0da7973a5a62a455.ctex"]
+source_file="res://imagenesjaldin/escena 2 mundo 3/8.png"
+dest_files=["res://.godot/imported/8.png-dfabd62868c4fce30d5be8df078dd059.ctex"]
 
 [params]
 

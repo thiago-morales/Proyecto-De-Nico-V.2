@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmyacbphb05ck"
-path="res://.godot/imported/DinoSprites - mort.png-6be2fa8af72f5e5543793936802c3605.ctex"
+uid="uid://d4dnwrnx0qgge"
+path="res://.godot/imported/6.png-ba06f932e886ad15be3a09e258f17f0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Carpeta de Varias cosas/Dinos Colores/DinoSprites - mort.png"
-dest_files=["res://.godot/imported/DinoSprites - mort.png-6be2fa8af72f5e5543793936802c3605.ctex"]
+source_file="res://imagenesjaldin/escena 1 mundo 2/6.png"
+dest_files=["res://.godot/imported/6.png-ba06f932e886ad15be3a09e258f17f0a.ctex"]
 
 [params]
 

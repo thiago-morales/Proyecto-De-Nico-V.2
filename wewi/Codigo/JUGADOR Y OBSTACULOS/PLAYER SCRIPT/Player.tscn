@@ -1,9 +1,8 @@
-[gd_scene load_steps=30 format=3 uid="uid://b3wdo4v16vqdn"]
+[gd_scene load_steps=33 format=3 uid="uid://b3wdo4v16vqdn"]
 
 [ext_resource type="Script" uid="uid://b1b03pwcn0lw3" path="res://Codigo/JUGADOR Y OBSTACULOS/PLAYER SCRIPT/Player.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://dgeb8u5jwc113" path="res://Explosions/Circle_explosion/Circle_explosion1.png" id="2_5jdpx"]
 [ext_resource type="Texture2D" uid="uid://bk6benp4ke5ed" path="res://Carpeta de Varias cosas/Dinos Colores/sheets/DinoSprites - mort.png" id="2_dlhls"]
-[ext_resource type="Texture2D" uid="uid://bmyacbphb05ck" path="res://Carpeta de Varias cosas/Dinos Colores/DinoSprites - mort.png" id="2_kne1u"]
 [ext_resource type="AudioStream" uid="uid://2k1bfki506jw" path="res://musica/391670__jeckkech__jump.wav" id="3_c1rio"]
 [ext_resource type="Texture2D" uid="uid://nwbgxu8wciak" path="res://Explosions/Circle_explosion/Circle_explosion2.png" id="3_m3u10"]
 [ext_resource type="Texture2D" uid="uid://chmoyg0725d6k" path="res://Explosions/Circle_explosion/Circle_explosion3.png" id="4_wl05x"]
@@ -27,45 +26,61 @@ region = Rect2(360, 0, 24, 24)
 atlas = ExtResource("2_dlhls")
 region = Rect2(384, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tdg3f"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5ncpa"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(72, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dtqjt"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cxr5p"]
-atlas = ExtResource("2_kne1u")
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jdpx"]
+atlas = ExtResource("2_dlhls")
 region = Rect2(0, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wi0c6"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(120, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3u10"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(24, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hp6x6"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(144, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_wl05x"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(48, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3tkgg"]
-atlas = ExtResource("2_kne1u")
-region = Rect2(168, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4sq6"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(72, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_l6ohk"]
-atlas = ExtResource("2_kne1u")
+[sub_resource type="AtlasTexture" id="AtlasTexture_yl4bv"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(264, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyonh"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(288, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl2dh"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(312, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nkjr"]
+atlas = ExtResource("2_dlhls")
 region = Rect2(408, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_oudfo"]
-atlas = ExtResource("2_kne1u")
+[sub_resource type="AtlasTexture" id="AtlasTexture_000jg"]
+atlas = ExtResource("2_dlhls")
 region = Rect2(432, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d6rpx"]
-atlas = ExtResource("2_kne1u")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex08y"]
+atlas = ExtResource("2_dlhls")
 region = Rect2(456, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v42wp"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(480, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4m50y"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(504, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7u3bs"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(528, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsm1d"]
+atlas = ExtResource("2_dlhls")
+region = Rect2(552, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r3kul"]
 animations = [{
@@ -123,16 +138,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tdg3f")
+"texture": SubResource("AtlasTexture_5jdpx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5ncpa")
+"texture": SubResource("AtlasTexture_m3u10")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dtqjt")
+"texture": SubResource("AtlasTexture_wl05x")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cxr5p")
+"texture": SubResource("AtlasTexture_m4sq6")
 }],
 "loop": true,
 "name": &"Idle",
@@ -140,22 +155,34 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wi0c6")
+"texture": SubResource("AtlasTexture_yl4bv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hp6x6")
+"texture": SubResource("AtlasTexture_yyonh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3tkgg")
+"texture": SubResource("AtlasTexture_sl2dh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_l6ohk")
+"texture": SubResource("AtlasTexture_4nkjr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_oudfo")
+"texture": SubResource("AtlasTexture_000jg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_d6rpx")
+"texture": SubResource("AtlasTexture_ex08y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v42wp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4m50y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7u3bs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsm1d")
 }],
 "loop": true,
 "name": &"Run",
@@ -171,10 +198,9 @@ script = ExtResource("1_kpjcp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r3kul")
-animation = &"Death2"
+animation = &"Idle"
 autoplay = "Death"
-frame = 10
-frame_progress = 1.0
+frame_progress = 0.417793
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -0.5)

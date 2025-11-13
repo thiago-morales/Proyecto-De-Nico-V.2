@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx43n84f4syba"
-path="res://.godot/imported/2.png-c877b9dbbe0b22c0f241e2b5efc334ba.ctex"
+uid="uid://cov2tfy60uck0"
+path="res://.godot/imported/6.png-0ecb4f9b3efac088f6a782f8fea87617.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imagenesjaldin/Escena 2/2.png"
-dest_files=["res://.godot/imported/2.png-c877b9dbbe0b22c0f241e2b5efc334ba.ctex"]
+source_file="res://imagenesjaldin/escena 2 mundo 3/6.png"
+dest_files=["res://.godot/imported/6.png-0ecb4f9b3efac088f6a782f8fea87617.ctex"]
 
 [params]
 
